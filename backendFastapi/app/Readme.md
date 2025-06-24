@@ -1,0 +1,4 @@
+<!-- todo -->
+
+1, fix logger does not show direcory
+2, the donnee can be wrong , why no 2024 for GNFT.PA

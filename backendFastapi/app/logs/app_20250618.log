@@ -1,0 +1,1883 @@
+2025-06-18 04:56:43 - uvicorn.error - INFO - Started server process [98601]
+2025-06-18 04:56:43 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 04:56:43 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 05:07:11 - uvicorn.error - INFO - Shutting down
+2025-06-18 05:07:11 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 05:07:11 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 05:07:11 - uvicorn.error - INFO - Finished server process [98601]
+2025-06-18 05:07:12 - uvicorn.error - INFO - Started server process [8018]
+2025-06-18 05:07:12 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 05:07:12 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 05:21:14 - uvicorn.error - INFO - Shutting down
+2025-06-18 05:21:14 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 05:21:14 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 05:21:14 - uvicorn.error - INFO - Finished server process [8018]
+2025-06-18 05:22:03 - uvicorn.error - INFO - Started server process [20461]
+2025-06-18 05:22:03 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 05:22:03 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 05:22:21 - root - INFO - get_balance_sheet
+2025-06-18 05:22:21 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 05:22:21 - yfinance - DEBUG -  Entering get()
+2025-06-18 05:22:21 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 05:22:21 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 05:22:21 - yfinance - DEBUG - params=None
+2025-06-18 05:22:21 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 05:22:21 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 05:22:21 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 05:22:21 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 05:22:21 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 05:22:21 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 05:22:21 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 05:22:21 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG - reusing cookie
+2025-06-18 05:22:21 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 05:22:21 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 05:22:21 - yfinance - DEBUG - response code=200
+2025-06-18 05:22:21 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 05:22:21 - yfinance - DEBUG -  Exiting get()
+2025-06-18 05:22:21 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 05:22:21 - root - INFO - get_cash_flow
+2025-06-18 05:22:21 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 05:22:21 - yfinance - DEBUG -  Entering get()
+2025-06-18 05:22:21 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 05:22:21 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 05:22:21 - yfinance - DEBUG - params=None
+2025-06-18 05:22:21 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 05:22:21 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 05:22:21 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG - reusing cookie
+2025-06-18 05:22:21 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG - reusing crumb
+2025-06-18 05:22:21 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 05:22:21 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 05:22:21 - yfinance - DEBUG - response code=200
+2025-06-18 05:22:21 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 05:22:21 - yfinance - DEBUG -  Exiting get()
+2025-06-18 05:22:21 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 05:22:21 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 05:23:38 - uvicorn.error - INFO - Shutting down
+2025-06-18 05:23:38 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 05:23:38 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 05:23:38 - uvicorn.error - INFO - Finished server process [20461]
+2025-06-18 06:07:18 - uvicorn.error - INFO - Started server process [58760]
+2025-06-18 06:07:18 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:07:18 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:09:21 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:09:22 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:09:22 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:09:22 - uvicorn.error - INFO - Finished server process [58760]
+2025-06-18 06:09:49 - uvicorn.error - INFO - Started server process [60868]
+2025-06-18 06:09:49 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:09:49 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:09:58 - root - INFO - get_balance_sheet
+2025-06-18 06:09:58 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:09:58 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:09:58 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:09:58 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:09:58 - yfinance - DEBUG - params=None
+2025-06-18 06:09:58 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:09:58 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:09:58 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:09:58 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:09:58 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:09:58 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:09:58 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:09:58 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:09:58 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:09:58 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:09:58 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:09:59 - yfinance - DEBUG - response code=200
+2025-06-18 06:09:59 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:09:59 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:09:59 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:09:59 - root - INFO - get_cash_flow
+2025-06-18 06:09:59 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:09:59 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:09:59 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:09:59 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:09:59 - yfinance - DEBUG - params=None
+2025-06-18 06:09:59 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:09:59 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:09:59 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:09:59 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:09:59 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:09:59 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:09:59 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:09:59 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:09:59 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:09:59 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:09:59 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:09:59 - yfinance - DEBUG - response code=200
+2025-06-18 06:09:59 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:09:59 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:09:59 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:09:59 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:11:40 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:11:40 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:11:40 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:11:40 - uvicorn.error - INFO - Finished server process [60868]
+2025-06-18 06:11:41 - uvicorn.error - INFO - Started server process [62487]
+2025-06-18 06:11:41 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:11:41 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:12:22 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:12:22 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:12:22 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:12:22 - uvicorn.error - INFO - Finished server process [62487]
+2025-06-18 06:12:23 - uvicorn.error - INFO - Started server process [63089]
+2025-06-18 06:12:23 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:12:23 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:12:29 - root - INFO - get_balance_sheet
+2025-06-18 06:12:29 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:12:29 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:12:29 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:12:29 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:12:29 - yfinance - DEBUG - params=None
+2025-06-18 06:12:29 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:12:29 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:12:29 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:12:29 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:12:29 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:12:29 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:12:29 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:12:29 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:12:29 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:12:29 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:12:29 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:12:29 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:12:29 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:12:29 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:12:30 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:12:30 - yfinance - DEBUG - response code=200
+2025-06-18 06:12:30 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:12:30 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:12:30 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:12:30 - root - INFO - get_cash_flow
+2025-06-18 06:12:30 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:12:30 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:12:30 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:12:30 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:12:30 - yfinance - DEBUG - params=None
+2025-06-18 06:12:30 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:12:30 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:12:30 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:12:30 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:12:30 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:12:30 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:12:30 - yfinance - DEBUG - response code=200
+2025-06-18 06:12:30 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:12:30 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:12:30 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:12:30 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:12:47 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:12:47 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:12:47 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:12:47 - uvicorn.error - INFO - Finished server process [63089]
+2025-06-18 06:12:48 - uvicorn.error - INFO - Started server process [63422]
+2025-06-18 06:12:48 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:12:48 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:12:58 - root - INFO - get_balance_sheet
+2025-06-18 06:12:58 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:12:58 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:12:58 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:12:58 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:12:58 - yfinance - DEBUG - params=None
+2025-06-18 06:12:58 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:12:58 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:12:58 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:12:58 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:12:58 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:12:58 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:12:58 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:12:58 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:12:58 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:12:58 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:12:58 - yfinance - DEBUG - response code=200
+2025-06-18 06:12:58 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:12:58 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:12:58 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:12:58 - root - INFO - get_cash_flow
+2025-06-18 06:12:58 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:12:58 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:12:58 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:12:58 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:12:58 - yfinance - DEBUG - params=None
+2025-06-18 06:12:58 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:12:58 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:12:58 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:12:58 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:12:58 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:12:58 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:12:59 - yfinance - DEBUG - response code=200
+2025-06-18 06:12:59 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:12:59 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:12:59 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:12:59 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:14:18 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:14:18 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:14:18 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:14:18 - uvicorn.error - INFO - Finished server process [63422]
+2025-06-18 06:14:19 - uvicorn.error - INFO - Started server process [64749]
+2025-06-18 06:14:19 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:14:19 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:15:45 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:15:45 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:15:45 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:15:45 - uvicorn.error - INFO - Finished server process [64749]
+2025-06-18 06:15:46 - uvicorn.error - INFO - Started server process [65975]
+2025-06-18 06:15:46 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:15:46 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:15:51 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:15:51 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:15:51 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:15:51 - uvicorn.error - INFO - Finished server process [65975]
+2025-06-18 06:18:11 - uvicorn.error - INFO - Started server process [68102]
+2025-06-18 06:18:11 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:18:11 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:18:31 - root - INFO - get_balance_sheet
+2025-06-18 06:18:31 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:18:31 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:18:31 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:18:31 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:18:31 - yfinance - DEBUG - params=None
+2025-06-18 06:18:31 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:18:31 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:18:31 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:18:31 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:18:31 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:18:31 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:18:31 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:18:31 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:18:31 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:18:31 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:18:31 - yfinance - DEBUG - response code=200
+2025-06-18 06:18:31 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:18:31 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:18:31 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:18:31 - root - INFO - get_cash_flow
+2025-06-18 06:18:31 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:18:31 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:18:31 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:18:31 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:18:31 - yfinance - DEBUG - params=None
+2025-06-18 06:18:31 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:18:31 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:18:31 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:18:31 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:18:31 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:18:31 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:18:31 - yfinance - DEBUG - response code=200
+2025-06-18 06:18:31 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:18:31 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:18:31 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:18:31 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:19:00 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:19:00 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:19:00 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:19:00 - uvicorn.error - INFO - Finished server process [68102]
+2025-06-18 06:19:01 - uvicorn.error - INFO - Started server process [68753]
+2025-06-18 06:19:01 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:19:01 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:20:24 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:20:24 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:20:24 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:20:24 - uvicorn.error - INFO - Finished server process [68753]
+2025-06-18 06:20:25 - uvicorn.error - INFO - Started server process [69935]
+2025-06-18 06:20:25 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:20:25 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:20:27 - root - INFO - get_balance_sheet
+2025-06-18 06:20:27 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:20:27 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:20:27 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:20:27 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:20:27 - yfinance - DEBUG - params=None
+2025-06-18 06:20:27 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:20:27 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:20:27 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:20:27 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:20:27 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:20:27 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:20:27 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:20:27 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:20:27 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:20:27 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:20:27 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:20:28 - yfinance - DEBUG - response code=200
+2025-06-18 06:20:28 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:20:28 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:20:28 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:20:28 - root - INFO - get_cash_flow
+2025-06-18 06:20:28 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:20:28 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:20:28 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:20:28 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:20:28 - yfinance - DEBUG - params=None
+2025-06-18 06:20:28 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:20:28 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:20:28 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:20:28 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:20:28 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:20:28 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:20:28 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:20:28 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:20:28 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:20:28 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:20:28 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:20:28 - yfinance - DEBUG - response code=200
+2025-06-18 06:20:28 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:20:28 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:20:28 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:20:28 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:20:38 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:20:38 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:20:38 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:20:38 - uvicorn.error - INFO - Finished server process [69935]
+2025-06-18 06:20:39 - uvicorn.error - INFO - Started server process [70217]
+2025-06-18 06:20:39 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:20:39 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:20:40 - root - INFO - get_balance_sheet
+2025-06-18 06:20:40 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:20:40 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:20:40 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:20:40 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:20:40 - yfinance - DEBUG - params=None
+2025-06-18 06:20:40 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:20:40 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:20:40 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:20:40 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:20:40 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:20:40 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:20:40 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:20:40 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:20:40 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:20:40 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:20:40 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:20:41 - yfinance - DEBUG - response code=200
+2025-06-18 06:20:41 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:20:41 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:20:41 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:20:41 - root - INFO - get_cash_flow
+2025-06-18 06:20:41 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:20:41 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:20:41 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:20:41 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:20:41 - yfinance - DEBUG - params=None
+2025-06-18 06:20:41 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:20:41 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:20:41 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:20:41 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:20:41 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:20:41 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:20:41 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:20:41 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:20:41 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:20:41 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:20:41 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:20:41 - yfinance - DEBUG - response code=200
+2025-06-18 06:20:41 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:20:41 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:20:41 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:20:41 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:20:46 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:20:46 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:20:46 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:20:46 - uvicorn.error - INFO - Finished server process [70217]
+2025-06-18 06:20:47 - uvicorn.error - INFO - Started server process [70364]
+2025-06-18 06:20:47 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:20:47 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:21:12 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:21:12 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:21:12 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:21:12 - uvicorn.error - INFO - Finished server process [70364]
+2025-06-18 06:21:13 - uvicorn.error - INFO - Started server process [70690]
+2025-06-18 06:21:13 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:21:13 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:21:17 - root - INFO - get_balance_sheet
+2025-06-18 06:21:17 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:21:17 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:21:17 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:21:17 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:21:17 - yfinance - DEBUG - params=None
+2025-06-18 06:21:17 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:21:17 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:21:17 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:21:17 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:21:17 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:21:17 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:21:17 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:21:17 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:21:17 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:21:17 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:21:17 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:21:18 - yfinance - DEBUG - response code=200
+2025-06-18 06:21:18 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:21:18 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:21:18 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:21:18 - root - INFO - get_cash_flow
+2025-06-18 06:21:18 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:21:18 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:21:18 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:21:18 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:21:18 - yfinance - DEBUG - params=None
+2025-06-18 06:21:18 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:21:18 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:21:18 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:21:18 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:21:18 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:21:18 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:21:18 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:21:18 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:21:18 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:21:18 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:21:18 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:21:18 - yfinance - DEBUG - response code=200
+2025-06-18 06:21:18 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:21:18 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:21:18 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:21:18 - utils.rowManager - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:21:18 - utils.rowManager - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:25:56 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:25:56 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:25:56 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:25:56 - uvicorn.error - INFO - Finished server process [70690]
+2025-06-18 06:26:28 - uvicorn.error - INFO - Started server process [75121]
+2025-06-18 06:26:28 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:26:28 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:26:39 - root - INFO - get_balance_sheet
+2025-06-18 06:26:39 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:26:39 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:26:39 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:26:39 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:26:39 - yfinance - DEBUG - params=None
+2025-06-18 06:26:39 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:26:39 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:26:39 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:26:39 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:26:39 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:26:39 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:26:39 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:26:39 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:26:39 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:26:39 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:26:39 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:26:40 - yfinance - DEBUG - response code=200
+2025-06-18 06:26:40 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:26:40 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:26:40 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:26:40 - root - INFO - get_cash_flow
+2025-06-18 06:26:40 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:26:40 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:26:40 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:26:40 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:26:40 - yfinance - DEBUG - params=None
+2025-06-18 06:26:40 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:26:40 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:26:40 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:26:40 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:26:40 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:26:40 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:26:40 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:26:40 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:26:40 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:26:40 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:26:40 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:26:40 - yfinance - DEBUG - response code=200
+2025-06-18 06:26:40 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:26:40 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:26:40 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:26:40 - root - ERROR - Forget to pass the DataFrame to RowManager
+2025-06-18 06:26:40 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:27:15 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:27:15 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:27:15 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:27:15 - uvicorn.error - INFO - Finished server process [75121]
+2025-06-18 06:27:16 - uvicorn.error - INFO - Started server process [75752]
+2025-06-18 06:27:16 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:27:16 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:28:29 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:28:29 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:28:29 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:28:29 - uvicorn.error - INFO - Finished server process [75752]
+2025-06-18 06:28:30 - uvicorn.error - INFO - Started server process [76803]
+2025-06-18 06:28:30 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:28:30 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:28:36 - root - INFO - get_balance_sheet
+2025-06-18 06:28:36 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:28:36 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:28:36 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:28:36 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:28:36 - yfinance - DEBUG - params=None
+2025-06-18 06:28:36 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:28:36 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:28:36 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:28:36 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:28:36 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:28:36 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:28:36 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:28:36 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:28:36 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:28:36 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:28:36 - yfinance - DEBUG - response code=200
+2025-06-18 06:28:36 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:28:36 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:28:36 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:28:36 - root - INFO - get_cash_flow
+2025-06-18 06:28:36 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:28:36 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:28:36 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:28:36 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:28:36 - yfinance - DEBUG - params=None
+2025-06-18 06:28:36 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:28:36 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:28:36 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:28:36 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:28:36 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:28:36 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:28:37 - yfinance - DEBUG - response code=200
+2025-06-18 06:28:37 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:28:37 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:28:37 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:28:37 - root - INFO - indexList ordinary shares number basic shares outstanding common stock
+2025-06-18 06:28:37 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:30:26 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:30:26 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:30:26 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:30:26 - uvicorn.error - INFO - Finished server process [76803]
+2025-06-18 06:30:27 - uvicorn.error - INFO - Started server process [78550]
+2025-06-18 06:30:27 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:30:27 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:30:31 - root - INFO - get_balance_sheet
+2025-06-18 06:30:31 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:30:31 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:30:31 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:30:31 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:30:31 - yfinance - DEBUG - params=None
+2025-06-18 06:30:31 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:30:31 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:30:31 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:30:31 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:30:31 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:30:31 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:30:31 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:30:31 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:30:31 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:30:31 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:30:31 - yfinance - DEBUG - response code=200
+2025-06-18 06:30:31 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:30:31 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:30:31 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:30:31 - root - INFO - get_cash_flow
+2025-06-18 06:30:31 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:30:31 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:30:31 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:30:31 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:30:31 - yfinance - DEBUG - params=None
+2025-06-18 06:30:31 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:30:31 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:30:31 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:30:31 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:30:31 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:30:31 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:30:32 - yfinance - DEBUG - response code=200
+2025-06-18 06:30:32 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:30:32 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:30:32 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:30:32 - root - INFO - indexList ordinary shares number basic shares outstanding common stock
+2025-06-18 06:30:32 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:31:56 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:31:56 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:31:56 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:31:56 - uvicorn.error - INFO - Finished server process [78550]
+2025-06-18 06:31:57 - uvicorn.error - INFO - Started server process [79772]
+2025-06-18 06:31:57 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:31:57 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:32:06 - root - INFO - get_balance_sheet
+2025-06-18 06:32:06 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:32:06 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:32:06 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:32:06 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:32:06 - yfinance - DEBUG - params=None
+2025-06-18 06:32:06 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:32:06 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:32:06 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:32:06 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:32:06 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:32:06 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:32:06 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:32:06 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:32:06 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:32:06 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:32:06 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:32:06 - yfinance - DEBUG - response code=200
+2025-06-18 06:32:06 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:32:06 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:32:07 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:32:07 - root - INFO - get_cash_flow
+2025-06-18 06:32:07 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:32:07 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:32:07 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:32:07 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:32:07 - yfinance - DEBUG - params=None
+2025-06-18 06:32:07 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:32:07 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:32:07 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:32:07 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:32:07 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:32:07 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:32:07 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:32:07 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:32:07 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:32:07 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:32:07 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:32:07 - yfinance - DEBUG - response code=200
+2025-06-18 06:32:07 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:32:07 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:32:07 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:32:07 - root - INFO - indexList ordinary shares number
+2025-06-18 06:32:07 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:38:48 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:38:48 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:38:48 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:38:48 - uvicorn.error - INFO - Finished server process [79772]
+2025-06-18 06:38:49 - uvicorn.error - INFO - Started server process [85565]
+2025-06-18 06:38:49 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:38:49 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:39:05 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:39:05 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:39:05 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:39:05 - uvicorn.error - INFO - Finished server process [85565]
+2025-06-18 06:39:06 - uvicorn.error - INFO - Started server process [85856]
+2025-06-18 06:39:06 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:39:06 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:39:09 - root - INFO - get_balance_sheet
+2025-06-18 06:39:09 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:39:09 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:39:09 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:39:09 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:39:09 - yfinance - DEBUG - params=None
+2025-06-18 06:39:09 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:39:09 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:39:09 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:39:09 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:39:09 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:39:09 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:39:09 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:39:09 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:39:09 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:39:09 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:39:09 - yfinance - DEBUG - response code=200
+2025-06-18 06:39:09 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:39:09 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:39:09 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:39:09 - root - INFO - get_cash_flow
+2025-06-18 06:39:09 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:39:09 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:39:09 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:39:09 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:39:09 - yfinance - DEBUG - params=None
+2025-06-18 06:39:09 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:39:09 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:39:09 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:39:09 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:39:09 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:39:09 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:39:09 - yfinance - DEBUG - response code=200
+2025-06-18 06:39:09 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:39:09 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:39:09 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:39:09 - root - INFO - indexList ordinary shares number
+2025-06-18 06:39:09 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:39:42 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:39:42 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:39:42 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:39:42 - uvicorn.error - INFO - Finished server process [85856]
+2025-06-18 06:39:43 - uvicorn.error - INFO - Started server process [86342]
+2025-06-18 06:39:43 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:39:43 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:40:42 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:40:42 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:40:42 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:40:42 - uvicorn.error - INFO - Finished server process [86342]
+2025-06-18 06:40:43 - uvicorn.error - INFO - Started server process [87220]
+2025-06-18 06:40:43 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:40:43 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:40:49 - root - INFO - get_balance_sheet
+2025-06-18 06:40:49 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:40:49 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:40:49 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:40:49 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:40:49 - yfinance - DEBUG - params=None
+2025-06-18 06:40:49 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:40:49 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:40:49 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:40:49 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:40:49 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:40:49 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:40:49 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:40:49 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:40:49 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:40:49 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:40:49 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:40:50 - yfinance - DEBUG - response code=200
+2025-06-18 06:40:50 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:40:50 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:40:50 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:40:50 - root - INFO - get_cash_flow
+2025-06-18 06:40:50 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:40:50 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:40:50 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:40:50 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:40:50 - yfinance - DEBUG - params=None
+2025-06-18 06:40:50 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:40:50 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:40:50 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:40:50 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:40:50 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:40:50 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:40:50 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:40:50 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:40:50 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:40:50 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:40:50 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:40:50 - yfinance - DEBUG - response code=200
+2025-06-18 06:40:50 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:40:50 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:40:50 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:40:50 - root - INFO - indexList ordinary shares number
+2025-06-18 06:41:14 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:41:14 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:41:14 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:41:14 - uvicorn.error - INFO - Finished server process [87220]
+2025-06-18 06:41:15 - uvicorn.error - INFO - Started server process [87676]
+2025-06-18 06:41:15 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:41:15 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:41:21 - root - INFO - get_balance_sheet
+2025-06-18 06:41:21 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:41:21 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:41:21 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:41:21 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:41:21 - yfinance - DEBUG - params=None
+2025-06-18 06:41:21 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:41:21 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:41:21 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:41:21 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:41:21 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:41:21 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:41:21 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:41:21 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:41:21 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:41:21 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:41:21 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:41:22 - yfinance - DEBUG - response code=200
+2025-06-18 06:41:22 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:41:22 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:41:22 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:41:22 - root - INFO - get_cash_flow
+2025-06-18 06:41:22 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:41:22 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:41:22 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:41:22 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:41:22 - yfinance - DEBUG - params=None
+2025-06-18 06:41:22 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:41:22 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:41:22 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:41:22 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:41:22 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:41:22 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:41:22 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:41:22 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:41:22 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:41:22 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:41:22 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:41:22 - yfinance - DEBUG - response code=200
+2025-06-18 06:41:22 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:41:22 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:41:22 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:41:22 - root - INFO - call get_metric_name
+2025-06-18 06:41:22 - root - INFO - indexList ordinary shares number
+2025-06-18 06:41:53 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:41:53 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:41:53 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:41:53 - uvicorn.error - INFO - Finished server process [87676]
+2025-06-18 06:41:54 - uvicorn.error - INFO - Started server process [88337]
+2025-06-18 06:41:54 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:41:54 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:41:59 - root - INFO - get_balance_sheet
+2025-06-18 06:41:59 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:41:59 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:41:59 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:41:59 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:41:59 - yfinance - DEBUG - params=None
+2025-06-18 06:41:59 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:41:59 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:41:59 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:41:59 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:41:59 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:41:59 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:41:59 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:41:59 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:41:59 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:41:59 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:41:59 - yfinance - DEBUG - response code=200
+2025-06-18 06:41:59 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:41:59 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:41:59 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:41:59 - root - INFO - get_cash_flow
+2025-06-18 06:41:59 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:41:59 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:41:59 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:41:59 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:41:59 - yfinance - DEBUG - params=None
+2025-06-18 06:41:59 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:41:59 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:41:59 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:41:59 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:41:59 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:41:59 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:41:59 - yfinance - DEBUG - response code=200
+2025-06-18 06:41:59 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:41:59 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:41:59 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:41:59 - root - INFO - call get_metric_name
+2025-06-18 06:41:59 - root - INFO - indexList ordinary shares number
+2025-06-18 06:41:59 - root - ERROR - some error
+2025-06-18 06:43:01 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:43:01 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:43:01 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:43:01 - uvicorn.error - INFO - Finished server process [88337]
+2025-06-18 06:43:02 - uvicorn.error - INFO - Started server process [89266]
+2025-06-18 06:43:02 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:43:02 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:43:04 - root - INFO - get_balance_sheet
+2025-06-18 06:43:04 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:43:04 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:43:04 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:43:04 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:43:04 - yfinance - DEBUG - params=None
+2025-06-18 06:43:04 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:43:04 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:43:04 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:43:04 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:43:04 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:43:04 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:43:04 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:43:04 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:43:04 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:43:04 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:43:04 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:43:05 - yfinance - DEBUG - response code=200
+2025-06-18 06:43:05 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:43:05 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:43:05 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:43:05 - root - INFO - get_cash_flow
+2025-06-18 06:43:05 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:43:05 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:43:05 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:43:05 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:43:05 - yfinance - DEBUG - params=None
+2025-06-18 06:43:05 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:43:05 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:43:05 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:43:05 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:43:05 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:43:05 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:43:05 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:43:05 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:43:05 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:43:05 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:43:05 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:43:05 - yfinance - DEBUG - response code=200
+2025-06-18 06:43:05 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:43:05 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:43:05 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:43:05 - root - INFO - indexList ordinary shares number
+2025-06-18 06:43:05 - root - ERROR - some error
+2025-06-18 06:44:43 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:44:43 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:44:43 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:44:43 - uvicorn.error - INFO - Finished server process [89266]
+2025-06-18 06:44:44 - uvicorn.error - INFO - Started server process [90797]
+2025-06-18 06:44:44 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:44:44 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:44:55 - root - INFO - get_balance_sheet
+2025-06-18 06:44:55 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:44:55 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:44:55 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:44:55 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:44:55 - yfinance - DEBUG - params=None
+2025-06-18 06:44:55 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:44:55 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:44:55 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:44:55 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:44:55 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:44:55 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:44:55 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:44:55 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:44:55 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:44:55 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:44:55 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:44:55 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:44:55 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:44:55 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:44:56 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:44:56 - yfinance - DEBUG - response code=200
+2025-06-18 06:44:56 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:44:56 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:44:56 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:44:56 - root - INFO - get_cash_flow
+2025-06-18 06:44:56 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:44:56 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:44:56 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:44:56 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:44:56 - yfinance - DEBUG - params=None
+2025-06-18 06:44:56 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:44:56 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:44:56 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:44:56 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:44:56 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:44:56 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:44:56 - yfinance - DEBUG - response code=200
+2025-06-18 06:44:56 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:44:56 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:44:56 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:44:56 - root - INFO - indexList ordinary shares number
+2025-06-18 06:48:37 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:48:37 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:48:37 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:48:37 - uvicorn.error - INFO - Finished server process [90797]
+2025-06-18 06:48:38 - uvicorn.error - INFO - Started server process [94075]
+2025-06-18 06:48:38 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:48:38 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:48:42 - root - INFO - get_balance_sheet
+2025-06-18 06:48:42 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:48:42 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:48:42 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:48:42 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:48:42 - yfinance - DEBUG - params=None
+2025-06-18 06:48:42 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:48:42 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:48:42 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:48:42 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:48:42 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:48:42 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:48:42 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:48:42 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:48:42 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:48:42 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:48:42 - yfinance - DEBUG - response code=200
+2025-06-18 06:48:42 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:48:42 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:48:42 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:48:42 - root - INFO - get_cash_flow
+2025-06-18 06:48:42 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:48:42 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:48:42 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:48:42 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:48:42 - yfinance - DEBUG - params=None
+2025-06-18 06:48:42 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:48:42 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:48:42 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:48:42 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:48:42 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:48:42 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:48:43 - yfinance - DEBUG - response code=200
+2025-06-18 06:48:43 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:48:43 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:48:43 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:48:43 - root - INFO - indexList ordinary shares number
+2025-06-18 06:49:34 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:49:34 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:49:34 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:49:34 - uvicorn.error - INFO - Finished server process [94075]
+2025-06-18 06:49:35 - uvicorn.error - INFO - Started server process [94856]
+2025-06-18 06:49:35 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:49:35 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:49:38 - root - INFO - get_balance_sheet
+2025-06-18 06:49:38 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:49:38 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:49:38 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:49:38 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:49:38 - yfinance - DEBUG - params=None
+2025-06-18 06:49:38 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:49:38 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:49:38 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:49:38 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:49:38 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:49:38 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:49:38 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:49:38 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:49:38 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:49:38 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:49:38 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:49:38 - yfinance - DEBUG - response code=200
+2025-06-18 06:49:38 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:49:38 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:49:39 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:49:39 - root - INFO - get_cash_flow
+2025-06-18 06:49:39 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:49:39 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:49:39 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:49:39 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:49:39 - yfinance - DEBUG - params=None
+2025-06-18 06:49:39 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:49:39 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:49:39 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:49:39 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:49:39 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:49:39 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:49:39 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:49:39 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:49:39 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:49:39 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:49:39 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:49:39 - yfinance - DEBUG - response code=200
+2025-06-18 06:49:39 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:49:39 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:49:39 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:49:39 - root - INFO - indexList ordinary shares number
+2025-06-18 06:49:39 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:51:05 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:51:05 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:51:05 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:51:05 - uvicorn.error - INFO - Finished server process [94856]
+2025-06-18 06:51:06 - uvicorn.error - INFO - Started server process [96179]
+2025-06-18 06:51:06 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:51:06 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:51:50 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:51:51 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:51:51 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:51:51 - uvicorn.error - INFO - Finished server process [96179]
+2025-06-18 06:51:52 - uvicorn.error - INFO - Started server process [96793]
+2025-06-18 06:51:52 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:51:52 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:51:56 - root - INFO - get_balance_sheet
+2025-06-18 06:51:56 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:51:56 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:51:56 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:51:56 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:51:56 - yfinance - DEBUG - params=None
+2025-06-18 06:51:56 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:51:56 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:51:56 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:51:56 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:51:56 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:51:56 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:51:56 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:51:56 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:51:56 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:51:56 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:51:56 - yfinance - DEBUG - response code=200
+2025-06-18 06:51:56 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:51:56 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:51:56 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:51:56 - root - INFO - get_cash_flow
+2025-06-18 06:51:56 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:51:56 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:51:56 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:51:56 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:51:56 - yfinance - DEBUG - params=None
+2025-06-18 06:51:56 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:51:56 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:51:56 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:51:56 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:51:56 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:51:56 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:51:56 - yfinance - DEBUG - response code=200
+2025-06-18 06:51:56 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:51:56 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:51:56 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:51:56 - root - DEBUG - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:54:19 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:54:19 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:54:19 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:54:19 - uvicorn.error - INFO - Finished server process [96793]
+2025-06-18 06:54:20 - uvicorn.error - INFO - Started server process [98884]
+2025-06-18 06:54:20 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:54:20 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:54:22 - root - INFO - get_balance_sheet
+2025-06-18 06:54:22 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:54:22 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:54:22 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:54:22 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:54:22 - yfinance - DEBUG - params=None
+2025-06-18 06:54:22 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:54:22 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:54:22 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:54:22 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:54:22 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:54:22 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:54:22 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:54:22 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:54:22 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:54:22 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:54:22 - yfinance - DEBUG - response code=200
+2025-06-18 06:54:22 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:54:22 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:54:22 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:54:22 - root - INFO - get_cash_flow
+2025-06-18 06:54:22 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:54:22 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:54:22 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:54:22 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:54:22 - yfinance - DEBUG - params=None
+2025-06-18 06:54:22 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:54:22 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:54:22 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:54:22 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:54:22 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:54:22 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:54:23 - yfinance - DEBUG - response code=200
+2025-06-18 06:54:23 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:54:23 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:54:23 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:54:23 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 06:58:44 - uvicorn.error - INFO - Shutting down
+2025-06-18 06:58:44 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 06:58:44 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 06:58:44 - uvicorn.error - INFO - Finished server process [98884]
+2025-06-18 06:58:45 - uvicorn.error - INFO - Started server process [3080]
+2025-06-18 06:58:45 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 06:58:45 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 06:58:56 - root - INFO - get_balance_sheet
+2025-06-18 06:58:56 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:58:56 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:58:56 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:58:56 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 06:58:56 - yfinance - DEBUG - params=None
+2025-06-18 06:58:56 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:58:56 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:58:56 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 06:58:56 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 06:58:56 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 06:58:56 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 06:58:56 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 06:58:56 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:58:56 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 06:58:56 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:58:56 - yfinance - DEBUG - response code=200
+2025-06-18 06:58:56 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:58:56 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:58:56 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:58:56 - root - INFO - get_cash_flow
+2025-06-18 06:58:56 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 06:58:56 - yfinance - DEBUG -  Entering get()
+2025-06-18 06:58:56 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 06:58:56 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 06:58:56 - yfinance - DEBUG - params=None
+2025-06-18 06:58:56 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 06:58:56 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 06:58:56 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG - reusing cookie
+2025-06-18 06:58:56 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG - reusing crumb
+2025-06-18 06:58:56 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 06:58:56 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 06:58:57 - yfinance - DEBUG - response code=200
+2025-06-18 06:58:57 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 06:58:57 - yfinance - DEBUG -  Exiting get()
+2025-06-18 06:58:57 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 06:58:57 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:06:24 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:06:24 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:06:24 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:06:24 - uvicorn.error - INFO - Finished server process [3080]
+2025-06-18 07:06:25 - uvicorn.error - INFO - Started server process [9649]
+2025-06-18 07:06:25 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:06:25 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:07:06 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:07:06 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:07:06 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:07:06 - uvicorn.error - INFO - Finished server process [9649]
+2025-06-18 07:07:07 - uvicorn.error - INFO - Started server process [10249]
+2025-06-18 07:07:07 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:07:07 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:07:10 - root - INFO - get_balance_sheet
+2025-06-18 07:07:10 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:07:10 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:07:10 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:07:10 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:07:10 - yfinance - DEBUG - params=None
+2025-06-18 07:07:10 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:07:10 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:07:10 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:07:10 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:07:10 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:07:10 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:07:10 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:07:10 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:07:10 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:07:10 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:07:10 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:07:10 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:07:10 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:07:10 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:07:11 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:07:11 - yfinance - DEBUG - response code=200
+2025-06-18 07:07:11 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:07:11 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:07:11 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:07:11 - root - INFO - get_cash_flow
+2025-06-18 07:07:11 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:07:11 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:07:11 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:07:11 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:07:11 - yfinance - DEBUG - params=None
+2025-06-18 07:07:11 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:07:11 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:07:11 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:07:11 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:07:11 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:07:11 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:07:11 - yfinance - DEBUG - response code=200
+2025-06-18 07:07:11 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:07:11 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:07:11 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:07:11 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:10:42 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:10:43 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:10:43 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:10:43 - uvicorn.error - INFO - Finished server process [10249]
+2025-06-18 07:10:44 - uvicorn.error - INFO - Started server process [13234]
+2025-06-18 07:10:44 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:10:44 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:10:46 - root - INFO - get_balance_sheet
+2025-06-18 07:10:46 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:10:46 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:10:46 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:10:46 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:10:46 - yfinance - DEBUG - params=None
+2025-06-18 07:10:46 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:10:46 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:10:46 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:10:46 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:10:46 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:10:46 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:10:46 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:10:46 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:10:46 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:10:46 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:10:46 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:10:46 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:10:46 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:10:46 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:10:47 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:10:47 - yfinance - DEBUG - response code=200
+2025-06-18 07:10:47 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:10:47 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:10:47 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:10:47 - root - INFO - get_cash_flow
+2025-06-18 07:10:47 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:10:47 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:10:47 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:10:47 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:10:47 - yfinance - DEBUG - params=None
+2025-06-18 07:10:47 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:10:47 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:10:47 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:10:47 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:10:47 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:10:47 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:10:47 - yfinance - DEBUG - response code=200
+2025-06-18 07:10:47 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:10:47 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:10:47 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:10:47 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:13:34 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:13:34 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:13:34 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:13:34 - uvicorn.error - INFO - Finished server process [13234]
+2025-06-18 07:13:35 - uvicorn.error - INFO - Started server process [15732]
+2025-06-18 07:13:35 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:13:35 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:13:38 - root - INFO - get_balance_sheet
+2025-06-18 07:13:38 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:13:38 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:13:38 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:13:38 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:13:38 - yfinance - DEBUG - params=None
+2025-06-18 07:13:38 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:13:38 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:13:38 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:13:38 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:13:38 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:13:38 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:13:38 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:13:38 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:13:38 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:13:38 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:13:38 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:13:39 - yfinance - DEBUG - response code=200
+2025-06-18 07:13:39 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:13:39 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:13:39 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:13:39 - root - INFO - get_cash_flow
+2025-06-18 07:13:39 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:13:39 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:13:39 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:13:39 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:13:39 - yfinance - DEBUG - params=None
+2025-06-18 07:13:39 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:13:39 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:13:39 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:13:39 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:13:39 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:13:39 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:13:39 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:13:39 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:13:39 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:13:39 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:13:39 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:13:39 - yfinance - DEBUG - response code=200
+2025-06-18 07:13:39 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:13:39 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:13:39 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:13:39 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:13:57 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:13:57 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:13:57 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:13:57 - uvicorn.error - INFO - Finished server process [15732]
+2025-06-18 07:13:58 - uvicorn.error - INFO - Started server process [16053]
+2025-06-18 07:13:58 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:13:58 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:14:06 - root - INFO - get_balance_sheet
+2025-06-18 07:14:06 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:14:06 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:14:06 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:14:06 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:14:06 - yfinance - DEBUG - params=None
+2025-06-18 07:14:06 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:14:06 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:14:06 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:14:06 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:14:06 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:14:06 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:14:06 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:14:06 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:14:06 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:14:06 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:14:06 - yfinance - DEBUG - response code=200
+2025-06-18 07:14:06 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:14:06 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:14:06 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:14:06 - root - INFO - get_cash_flow
+2025-06-18 07:14:06 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:14:06 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:14:06 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:14:06 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:14:06 - yfinance - DEBUG - params=None
+2025-06-18 07:14:06 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:14:06 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:14:06 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:14:06 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:14:06 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:14:06 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:14:06 - yfinance - DEBUG - response code=200
+2025-06-18 07:14:06 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:14:06 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:14:06 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:14:06 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:14:55 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:14:55 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:14:55 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:14:55 - uvicorn.error - INFO - Finished server process [16053]
+2025-06-18 07:14:56 - uvicorn.error - INFO - Started server process [16830]
+2025-06-18 07:14:56 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:14:56 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:15:00 - root - INFO - get_balance_sheet
+2025-06-18 07:15:00 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:15:00 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:15:00 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:15:00 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:15:00 - yfinance - DEBUG - params=None
+2025-06-18 07:15:00 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:15:00 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:15:00 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:15:00 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:15:00 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:15:00 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:15:00 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:15:00 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:15:00 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:15:00 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:15:00 - yfinance - DEBUG - response code=200
+2025-06-18 07:15:00 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:15:00 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:15:00 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:15:00 - root - INFO - get_cash_flow
+2025-06-18 07:15:00 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:15:00 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:15:00 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:15:00 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:15:00 - yfinance - DEBUG - params=None
+2025-06-18 07:15:00 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:15:00 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:15:00 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:15:00 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:15:00 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:15:00 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:15:00 - yfinance - DEBUG - response code=200
+2025-06-18 07:15:00 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:15:00 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:15:00 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:15:00 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:15:39 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:15:39 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:15:39 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:15:39 - uvicorn.error - INFO - Finished server process [16830]
+2025-06-18 07:15:40 - uvicorn.error - INFO - Started server process [17448]
+2025-06-18 07:15:40 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:15:40 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:15:41 - root - INFO - get_balance_sheet
+2025-06-18 07:15:41 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:15:41 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:15:41 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:15:41 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:15:41 - yfinance - DEBUG - params=None
+2025-06-18 07:15:41 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:15:41 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:15:41 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:15:41 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:15:41 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:15:41 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:15:41 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:15:41 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:15:41 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:15:41 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:15:41 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:15:41 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:15:41 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:15:41 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:15:42 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:15:42 - yfinance - DEBUG - response code=200
+2025-06-18 07:15:42 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:15:42 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:15:42 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:15:42 - root - INFO - get_cash_flow
+2025-06-18 07:15:42 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:15:42 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:15:42 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:15:42 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:15:42 - yfinance - DEBUG - params=None
+2025-06-18 07:15:42 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:15:42 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:15:42 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:15:42 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:15:42 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:15:42 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:15:43 - yfinance - DEBUG - response code=200
+2025-06-18 07:15:43 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:15:43 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:15:43 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:15:43 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:16:19 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:16:20 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:16:20 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:16:20 - uvicorn.error - INFO - Finished server process [17448]
+2025-06-18 07:16:21 - uvicorn.error - INFO - Started server process [18055]
+2025-06-18 07:16:21 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:16:21 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:16:24 - root - INFO - get_balance_sheet
+2025-06-18 07:16:24 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:16:24 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:16:24 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:16:24 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:16:24 - yfinance - DEBUG - params=None
+2025-06-18 07:16:24 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:16:24 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:16:24 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:16:24 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:16:24 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:16:24 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:16:24 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:16:24 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:16:24 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:16:24 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:16:24 - yfinance - DEBUG - response code=200
+2025-06-18 07:16:24 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:16:24 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:16:24 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:16:24 - root - INFO - get_cash_flow
+2025-06-18 07:16:24 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:16:24 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:16:24 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:16:24 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:16:24 - yfinance - DEBUG - params=None
+2025-06-18 07:16:24 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:16:24 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:16:24 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:16:24 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:16:24 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:16:24 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:16:24 - yfinance - DEBUG - response code=200
+2025-06-18 07:16:24 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:16:24 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:16:24 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:16:24 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:17:39 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:17:39 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:17:39 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:17:39 - uvicorn.error - INFO - Finished server process [18055]
+2025-06-18 07:17:40 - uvicorn.error - INFO - Started server process [19222]
+2025-06-18 07:17:40 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:17:40 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:17:56 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:17:56 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:17:56 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:17:56 - uvicorn.error - INFO - Finished server process [19222]
+2025-06-18 07:17:59 - uvicorn.error - INFO - Started server process [19419]
+2025-06-18 07:17:59 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:17:59 - uvicorn.error - INFO - Application startup complete.
+2025-06-18 07:18:03 - root - INFO - get_balance_sheet
+2025-06-18 07:18:03 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:18:03 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:18:03 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:18:03 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-18 07:18:03 - yfinance - DEBUG - params=None
+2025-06-18 07:18:03 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:18:03 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:18:03 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-18 07:18:03 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-18 07:18:03 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-18 07:18:03 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-18 07:18:03 - yfinance - DEBUG - reusing persistent cookie
+2025-06-18 07:18:03 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:18:03 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-18 07:18:03 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:18:03 - yfinance - DEBUG - response code=200
+2025-06-18 07:18:03 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:18:03 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:18:03 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:18:03 - root - INFO - get_cash_flow
+2025-06-18 07:18:03 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-18 07:18:03 - yfinance - DEBUG -  Entering get()
+2025-06-18 07:18:03 - yfinance - DEBUG -   Entering _make_request()
+2025-06-18 07:18:03 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-18 07:18:03 - yfinance - DEBUG - params=None
+2025-06-18 07:18:03 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-18 07:18:03 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-18 07:18:03 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG - reusing cookie
+2025-06-18 07:18:03 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG - reusing crumb
+2025-06-18 07:18:03 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-18 07:18:03 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-18 07:18:03 - yfinance - DEBUG - response code=200
+2025-06-18 07:18:03 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-18 07:18:03 - yfinance - DEBUG -  Exiting get()
+2025-06-18 07:18:03 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-18 07:18:03 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-18 07:18:51 - uvicorn.error - INFO - Shutting down
+2025-06-18 07:18:51 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-18 07:18:51 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-18 07:18:51 - uvicorn.error - INFO - Finished server process [19419]
+2025-06-18 07:18:52 - uvicorn.error - INFO - Started server process [20290]
+2025-06-18 07:18:52 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-18 07:18:52 - uvicorn.error - INFO - Application startup complete.
+2025-06-19 12:12:08 - uvicorn.error - INFO - Shutting down
+2025-06-19 12:12:08 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-19 12:12:08 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-19 12:12:08 - uvicorn.error - INFO - Finished server process [20290]

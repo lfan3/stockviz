@@ -1,0 +1,223 @@
+2025-06-24 15:05:26 - uvicorn.error - INFO - Will watch for changes in these directories: ['/Users/llf/project/stockViz/backendFastapi/app']
+2025-06-24 15:05:26 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-06-24 15:05:26 - uvicorn.error - INFO - Started reloader process [96218] using WatchFiles
+2025-06-24 15:05:27 - uvicorn.error - INFO - Started server process [96224]
+2025-06-24 15:05:27 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-24 15:05:27 - uvicorn.error - INFO - Application startup complete.
+2025-06-24 15:06:04 - uvicorn.error - INFO - Shutting down
+2025-06-24 15:06:05 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-24 15:06:05 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-24 15:06:05 - uvicorn.error - INFO - Finished server process [96224]
+2025-06-24 15:06:05 - uvicorn.error - INFO - Stopping reloader process [96218]
+2025-06-24 15:06:26 - uvicorn.error - INFO - Will watch for changes in these directories: ['/Users/llf/project/stockViz/backendFastapi/app']
+2025-06-24 15:06:26 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-06-24 15:06:26 - uvicorn.error - INFO - Started reloader process [97522] using WatchFiles
+2025-06-24 15:06:27 - uvicorn.error - INFO - Started server process [97524]
+2025-06-24 15:06:27 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-24 15:06:27 - uvicorn.error - INFO - Application startup complete.
+2025-06-24 15:08:54 - uvicorn.error - INFO - Shutting down
+2025-06-24 15:08:54 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-24 15:08:54 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-24 15:08:54 - uvicorn.error - INFO - Finished server process [97524]
+2025-06-24 15:08:54 - uvicorn.error - INFO - Stopping reloader process [97522]
+2025-06-24 15:29:55 - uvicorn.error - INFO - Will watch for changes in these directories: ['/Users/llf/project/stockViz/backendFastapi/app']
+2025-06-24 15:29:55 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-06-24 15:29:55 - uvicorn.error - INFO - Started reloader process [20717] using WatchFiles
+2025-06-24 15:29:56 - uvicorn.error - INFO - Started server process [20727]
+2025-06-24 15:29:56 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-24 15:29:56 - uvicorn.error - INFO - Application startup complete.
+2025-06-24 15:30:17 - root - INFO - begin the FinancialAnalysisFacade.full_analysis
+2025-06-24 15:30:17 - root - INFO - get_balance_sheet
+2025-06-24 15:30:17 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-24 15:30:17 - yfinance - DEBUG -  Entering get()
+2025-06-24 15:30:17 - yfinance - DEBUG -   Entering _make_request()
+2025-06-24 15:30:17 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-06-24 15:30:17 - yfinance - DEBUG - params=None
+2025-06-24 15:30:17 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-24 15:30:17 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-24 15:30:17 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-06-24 15:30:17 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-24 15:30:17 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-24 15:30:17 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-06-24 15:30:17 - yfinance - DEBUG - reusing persistent cookie
+2025-06-24 15:30:17 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG - reusing cookie
+2025-06-24 15:30:17 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-24 15:30:17 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-24 15:30:17 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - response code=200
+2025-06-24 15:30:18 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG -  Exiting get()
+2025-06-24 15:30:18 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-24 15:30:18 - root - INFO - get_cash_flow
+2025-06-24 15:30:18 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-06-24 15:30:18 - yfinance - DEBUG -  Entering get()
+2025-06-24 15:30:18 - yfinance - DEBUG -   Entering _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-06-24 15:30:18 - yfinance - DEBUG - params=None
+2025-06-24 15:30:18 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing cookie
+2025-06-24 15:30:18 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing crumb
+2025-06-24 15:30:18 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - response code=200
+2025-06-24 15:30:18 - yfinance - DEBUG -   Exiting _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG -  Exiting get()
+2025-06-24 15:30:18 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-06-24 15:30:18 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/GNFT.PA
+2025-06-24 15:30:18 - yfinance - DEBUG - Entering get()
+2025-06-24 15:30:18 - yfinance - DEBUG -  Entering _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/GNFT.PA
+2025-06-24 15:30:18 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'GNFT.PA'}
+2025-06-24 15:30:18 - yfinance - DEBUG -   Entering _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-24 15:30:18 - yfinance - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing cookie
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing crumb
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb()
+2025-06-24 15:30:18 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/balance_sheet_GNFT.PA.csv'), (<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/cash_flow_GNFT.PA.csv')}
+2025-06-24 15:30:18 - yfinance - DEBUG - response code=200
+2025-06-24 15:30:18 - yfinance - DEBUG -  Exiting _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG - Exiting get()
+2025-06-24 15:30:18 - yfinance - DEBUG - get_raw_json(): https://query1.finance.yahoo.com/v7/finance/quote?
+2025-06-24 15:30:18 - yfinance - DEBUG - Entering get()
+2025-06-24 15:30:18 - yfinance - DEBUG -  Entering _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/v7/finance/quote?
+2025-06-24 15:30:18 - yfinance - DEBUG - params={'symbols': 'GNFT.PA', 'formatted': 'false'}
+2025-06-24 15:30:18 - yfinance - DEBUG -   Entering _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-24 15:30:18 - yfinance - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing cookie
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing crumb
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - response code=200
+2025-06-24 15:30:18 - yfinance - DEBUG -  Exiting _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG - Exiting get()
+2025-06-24 15:30:18 - yfinance - DEBUG - Entering get()
+2025-06-24 15:30:18 - yfinance - DEBUG -  Entering _make_request()
+2025-06-24 15:30:18 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/GNFT.PA?symbol=GNFT.PA&type=trailingPegRatio&period1=1734998400&period2=1750809600
+2025-06-24 15:30:18 - yfinance - DEBUG - params=None
+2025-06-24 15:30:18 - yfinance - DEBUG -   Entering _get_cookie_and_crumb()
+2025-06-24 15:30:18 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-24 15:30:18 - yfinance - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing cookie
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_cookie_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -     Entering _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG - reusing crumb
+2025-06-24 15:30:18 - yfinance - DEBUG -     Exiting _get_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2025-06-24 15:30:18 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb()
+2025-06-24 15:30:19 - yfinance - DEBUG - response code=200
+2025-06-24 15:30:19 - yfinance - DEBUG -  Exiting _make_request()
+2025-06-24 15:30:19 - yfinance - DEBUG - Exiting get()
+2025-06-24 15:30:19 - root - INFO - get compoany info {'address1': 'Parc Eurasanté', 'address2': '885, avenue Eugène Avinée', 'city': 'Loos', 'zip': '59120', 'country': 'France', 'phone': '33 3 20 16 40 00', 'fax': '33 2 20 16 40 01', 'website': 'https://www.genfit.com', 'industry': 'Biotechnology', 'industryKey': 'biotechnology', 'industryDisp': 'Biotechnology', 'sector': 'Healthcare', 'sectorKey': 'healthcare', 'sectorDisp': 'Healthcare', 'longBusinessSummary': 'Genfit S.A., a late-stage biopharmaceutical company, discovers and develops drug candidates and diagnostic solutions for metabolic and liver-related diseases. The company develops Elafibranor, which is in Phase III clinical trial to treat patients with primary biliary cholangitis. It also engages in the development of NIS4 technology for the diagnosis of nonalcoholic steatohepatitis (NASH) and fibrosis; VS-01 for the treatment of Urea Cycle Disorder (UCD) and Organic Acidemia Disorder (OAD); GNS561, which is in Phase 1b/2a trial to treat patients with cholangiocarcinoma (CCA); VS-01-ACLF and Nitazoxanide (NTZ), which is in Phase 1 trial to treat acute-on-chronic liver failure, as well as VS-02-HE, which is in preclinical trial for the treatment of Reduction of Hyperammonemia and the Stabilization of Blood Ammonia; CML-022; SRT-015, an ASK1 inhibitor targets the inhibition of cellular apoptosis, inflammation, and fibrosis. The company has a licensing agreement with Labcorp for the commercialization of NASHnext, a blood-based molecular diagnostic test; and Genoscience Pharma to develop and commercialize the investigational treatment GNS561 for CCA. The company was incorporated in 1999 and is headquartered in Loos, France.', 'fullTimeEmployees': 180, 'companyOfficers': [{'maxAge': 1, 'name': 'Mr. Jean-Francois  Mouney', 'age': 69, 'title': 'Co-Founder & Chairman of the Board', 'yearBorn': 1955, 'fiscalYear': 2024, 'totalPay': 382684, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. M. Pascal Prigent', 'age': 55, 'title': 'Chief Executive Officer', 'yearBorn': 1969, 'fiscalYear': 2024, 'totalPay': 622645, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Prof. Bart  Staels', 'age': 61, 'title': 'Co-Founder & Chairman of the Scientific Advisory Board', 'yearBorn': 1963, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Thomas  Baetz', 'age': 50, 'title': 'Chief Financial Officer', 'yearBorn': 1974, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Pascal  Caisey', 'age': 56, 'title': 'Chief Operating Officer', 'yearBorn': 1968, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Dr. Dean W. Hum Ph.D.', 'age': 62, 'title': 'Chief Scientific Officer', 'yearBorn': 1962, 'fiscalYear': 2024, 'totalPay': 710717, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Jean-Christophe  Marcoux', 'age': 46, 'title': 'Chief Corporate Affairs Officer, Head of Investor Relations & Head of ESG', 'yearBorn': 1978, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Laurent  Lannoo', 'age': 53, 'title': 'Corporate Secretary & Director of Legal Affairs', 'yearBorn': 1971, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Ms. Stefanie  Magner J.D.', 'age': 43, 'title': 'Chief Compliance Officer & Executive VP of International Legal Affairs', 'yearBorn': 1981, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Ms. Emilie  Desodt', 'age': 41, 'title': 'Executive Vice President of Human Resources', 'yearBorn': 1983, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}], 'auditRisk': 8, 'boardRisk': 7, 'compensationRisk': 5, 'shareHolderRightsRisk': 5, 'overallRisk': 5, 'governanceEpochDate': 1748736000, 'compensationAsOfEpochDate': 1735603200, 'executiveTeam': [], 'maxAge': 86400, 'priceHint': 4, 'previousClose': 3.352, 'open': 3.398, 'dayLow': 3.398, 'dayHigh': 3.436, 'regularMarketPreviousClose': 3.352, 'regularMarketOpen': 3.398, 'regularMarketDayLow': 3.398, 'regularMarketDayHigh': 3.436, 'payoutRatio': 0.0, 'beta': 1.293, 'trailingPE': 113.8, 'volume': 61405, 'regularMarketVolume': 61405, 'averageVolume': 216898, 'averageVolume10days': 122592, 'averageDailyVolume10Day': 122592, 'marketCap': 170687024, 'fiftyTwoWeekLow': 2.62, 'fiftyTwoWeekHigh': 5.86, 'priceToSalesTrailing12Months': 2.414517, 'fiftyDayAverage': 3.65528, 'twoHundredDayAverage': 3.893235, 'trailingAnnualDividendRate': 0.0, 'trailingAnnualDividendYield': 0.0, 'currency': 'EUR', 'tradeable': False, 'enterpriseValue': 147236672, 'forwardPE': 17.968422, 'profitMargins': 0.02132, 'floatShares': 43767241, 'sharesOutstanding': 49996200, 'heldPercentInsiders': 0.13232, 'heldPercentInstitutions': 0.00927, 'impliedSharesOutstanding': 49996200, 'bookValue': 1.39, 'priceToBook': 2.4561152, 'lastFiscalYearEnd': 1735603200, 'nextFiscalYearEnd': 1767139200, 'mostRecentQuarter': 1735603200, 'netIncomeToCommon': 1507000, 'trailingEps': 0.03, 'enterpriseToRevenue': 2.083, 'enterpriseToEbitda': 31.374, '52WeekChange': -0.084153, 'SandP52WeekChange': 0.10163462, 'quoteType': 'EQUITY', 'currentPrice': 3.414, 'targetHighPrice': 11.5, 'targetLowPrice': 9.0, 'targetMeanPrice': 9.85, 'targetMedianPrice': 9.45, 'recommendationKey': 'none', 'numberOfAnalystOpinions': 4, 'totalCash': 81788000, 'totalCashPerShare': 1.643, 'ebitda': 4693000, 'totalDebt': 62133000, 'quickRatio': 1.189, 'currentRatio': 1.234, 'totalRevenue': 70692000, 'debtToEquity': 89.756, 'revenuePerShare': 1.421, 'returnOnAssets': 0.01145, 'returnOnEquity': 0.02197, 'grossProfits': 70692000, 'freeCashflow': 12624000, 'operatingCashflow': 15549000, 'revenueGrowth': -0.505, 'grossMargins': 1.0, 'ebitdaMargins': 0.06639, 'operatingMargins': -2.93858, 'financialCurrency': 'EUR', 'symbol': 'GNFT.PA', 'language': 'en-US', 'region': 'US', 'typeDisp': 'Equity', 'quoteSourceName': 'Delayed Quote', 'triggerable': False, 'customPriceAlertConfidence': 'LOW', 'regularMarketChangePercent': 1.8496431, 'regularMarketPrice': 3.414, 'marketState': 'REGULAR', 'shortName': 'GENFIT', 'longName': 'Genfit S.A.', 'twoHundredDayAverageChangePercent': -0.123094276, 'sourceInterval': 15, 'exchangeDataDelayedBy': 15, 'cryptoTradeable': False, 'regularMarketChange': 0.062000036, 'regularMarketDayRange': '3.398 - 3.436', 'fullExchangeName': 'Paris', 'averageDailyVolume3Month': 216898, 'fiftyTwoWeekLowChange': 0.79400015, 'fiftyTwoWeekLowChangePercent': 0.3030535, 'fiftyTwoWeekRange': '2.62 - 5.86', 'fiftyTwoWeekHighChange': -2.446, 'fiftyTwoWeekHighChangePercent': -0.41740614, 'fiftyTwoWeekChangePercent': -8.415299, 'earningsTimestamp': 1758549600, 'earningsTimestampStart': 1758549600, 'earningsTimestampEnd': 1758549600, 'isEarningsDateEstimate': False, 'epsTrailingTwelveMonths': 0.03, 'epsCurrentYear': 2.40479, 'priceEpsCurrentYear': 1.4196666, 'fiftyDayAverageChange': -0.24128008, 'fiftyDayAverageChangePercent': -0.06600864, 'twoHundredDayAverageChange': -0.47923493, 'corporateActions': [], 'regularMarketTime': 1750770616, 'exchange': 'PAR', 'messageBoardId': 'finmb_9683234', 'exchangeTimezoneName': 'Europe/Paris', 'exchangeTimezoneShortName': 'CEST', 'gmtOffSetMilliseconds': 7200000, 'market': 'fr_market', 'esgPopulated': False, 'hasPrePostMarketData': False, 'firstTradeDateMilliseconds': 1166515200000, 'trailingPegRatio': None}
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['ordinary shares number', 'basic shares outstanding', 'common stock']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['Stockholders Equity']
+2025-06-24 15:30:19 - root - INFO - Found exact match: Stockholders Equity
+2025-06-24 15:30:19 - root - INFO - empty cols [Timestamp('2024-12-31 00:00:00'), Timestamp('2020-12-31 00:00:00')]
+2025-06-24 15:30:19 - root - INFO - not empty cols DatetimeIndex(['2023-12-31', '2022-12-31', '2021-12-31'], dtype='datetime64[ns]', freq=None)
+2025-06-24 15:30:19 - root - INFO - bs first year: 2022-12-31 00:00:00
+2025-06-24 15:30:19 - root - INFO - Processing year: 2023
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['ordinary shares number', 'basic shares outstanding', 'common stock']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['Stockholders Equity']
+2025-06-24 15:30:19 - root - INFO - Found exact match: Stockholders Equity
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['current assets', 'total current assets']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'current assets' in 'Total Non Current Assets'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['current liabilities', 'total current liabilities']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'current liabilities' in 'Total Non Current Liabilities Net Minority Interest'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['inventory', 'inventories']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'inventory' in 'Inventory'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total liabilities net minority interest', 'total liabilities']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total liabilities net minority interest' in 'Total Liabilities Net Minority Interest'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total debt', 'interest bearing debt']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total debt' in 'Total Debt'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total assets']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total assets' in 'Total Assets'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['net income']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'net income' in 'Net Income From Continuing Operations'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['operating cash flow']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'operating cash flow' in 'Operating Cash Flow'
+2025-06-24 15:30:19 - root - INFO - keys for metrics {'shares_outstanding': 'Ordinary Shares Number', 'stockholders_equity': 'Stockholders Equity', 'current_assets': 'Total Non Current Assets', 'current_liabilities': 'Total Non Current Liabilities Net Minority Interest', 'inventory': 'Inventory', 'total_liabilities': 'Total Liabilities Net Minority Interest', 'total_debt': 'Total Debt', 'total_assets': 'Total Assets', 'net_income': 'Net Income From Continuing Operations', 'operating cash flow': 'Operating Cash Flow'}
+2025-06-24 15:30:19 - root - INFO - data for metrics 2023, {'operating_self.cash_flow': -55429000.0, 'shares_outstanding': 49834983.0, 'stockholders_equity': 67951000.0, 'net_income': -28894000.0, 'current_assets': 60758000.0, 'current_liabilities': 67441000.0, 'inventory': 4000.0, 'total_liabilities': 105921000.0, 'total_debt': 70179000.0, 'total_assets': 173872000.0}
+2025-06-24 15:30:19 - root - INFO - year_metrics {'year': 2023, 'operatingCashFlowPerShare': -1.1122508058244949, 'roe': -0.4252181719179997, 'currentRatio': 0.9009059770762593, 'quickRatio': 0.9008466659747039, 'debtAssetRatio': 0.40362450538327044, 'liabilitiesAssetRatio': 0.6091895187264195}
+2025-06-24 15:30:19 - root - INFO - Processing year: 2022
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['ordinary shares number', 'basic shares outstanding', 'common stock']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['Stockholders Equity']
+2025-06-24 15:30:19 - root - INFO - Found exact match: Stockholders Equity
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['current assets', 'total current assets']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'current assets' in 'Total Non Current Assets'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['current liabilities', 'total current liabilities']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'current liabilities' in 'Total Non Current Liabilities Net Minority Interest'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['inventory', 'inventories']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'inventory' in 'Inventory'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total liabilities net minority interest', 'total liabilities']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total liabilities net minority interest' in 'Total Liabilities Net Minority Interest'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total debt', 'interest bearing debt']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total debt' in 'Total Debt'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total assets']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total assets' in 'Total Assets'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['net income']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'net income' in 'Net Income From Continuing Operations'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['operating cash flow']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'operating cash flow' in 'Operating Cash Flow'
+2025-06-24 15:30:19 - root - INFO - keys for metrics {'shares_outstanding': 'Ordinary Shares Number', 'stockholders_equity': 'Stockholders Equity', 'current_assets': 'Total Non Current Assets', 'current_liabilities': 'Total Non Current Liabilities Net Minority Interest', 'inventory': 'Inventory', 'total_liabilities': 'Total Liabilities Net Minority Interest', 'total_debt': 'Total Debt', 'total_assets': 'Total Assets', 'net_income': 'Net Income From Continuing Operations', 'operating cash flow': 'Operating Cash Flow'}
+2025-06-24 15:30:19 - root - INFO - data for metrics 2022, {'operating_self.cash_flow': -72638000.0, 'shares_outstanding': 49834983.0, 'stockholders_equity': 94528000.0, 'net_income': -23719000.0, 'current_assets': 57081000.0, 'current_liabilities': 81642000.0, 'inventory': 4000.0, 'total_liabilities': 121012000.0, 'total_debt': 75275000.0, 'total_assets': 215540000.0}
+2025-06-24 15:30:19 - root - INFO - year_metrics {'year': 2022, 'operatingCashFlowPerShare': -1.4575704781518637, 'roe': -0.2509203622207177, 'currentRatio': 0.6991621959285662, 'quickRatio': 0.6991132015384238, 'debtAssetRatio': 0.34923912034889115, 'liabilitiesAssetRatio': 0.5614363923169713}
+2025-06-24 15:30:19 - root - INFO - Processing year: 2021
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['ordinary shares number', 'basic shares outstanding', 'common stock']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'ordinary shares number' in 'Ordinary Shares Number'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['Stockholders Equity']
+2025-06-24 15:30:19 - root - INFO - Found exact match: Stockholders Equity
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['current assets', 'total current assets']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'current assets' in 'Total Non Current Assets'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['current liabilities', 'total current liabilities']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'current liabilities' in 'Total Non Current Liabilities Net Minority Interest'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['inventory', 'inventories']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'inventory' in 'Inventory'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total liabilities net minority interest', 'total liabilities']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total liabilities net minority interest' in 'Total Liabilities Net Minority Interest'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total debt', 'interest bearing debt']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total debt' in 'Total Debt'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['total assets']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'total assets' in 'Total Assets'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['net income']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'net income' in 'Net Income From Continuing Operations'
+2025-06-24 15:30:19 - root - INFO - call get_metric_name indexList ['operating cash flow']
+2025-06-24 15:30:19 - root - INFO - Found partial match: 'operating cash flow' in 'Operating Cash Flow'
+2025-06-24 15:30:19 - root - INFO - keys for metrics {'shares_outstanding': 'Ordinary Shares Number', 'stockholders_equity': 'Stockholders Equity', 'current_assets': 'Total Non Current Assets', 'current_liabilities': 'Total Non Current Liabilities Net Minority Interest', 'inventory': 'Inventory', 'total_liabilities': 'Total Liabilities Net Minority Interest', 'total_debt': 'Total Debt', 'total_assets': 'Total Assets', 'net_income': 'Net Income From Continuing Operations', 'operating cash flow': 'Operating Cash Flow'}
+2025-06-24 15:30:19 - root - INFO - data for metrics 2021, {'operating_self.cash_flow': 99915000.0, 'shares_outstanding': 49815489.0, 'stockholders_equity': 119097000.0, 'net_income': 67259000.0, 'current_assets': 13623000.0, 'current_liabilities': 99786000.0, 'inventory': 4000.0, 'total_liabilities': 162623000.0, 'total_debt': 74234000.0, 'total_assets': 281720000.0}
+2025-06-24 15:30:19 - root - INFO - year_metrics {'year': 2021, 'operatingCashFlowPerShare': 2.005701479714472, 'roe': 0.5647413452899738, 'currentRatio': 0.1365221574168721, 'quickRatio': 0.13648207163329526, 'debtAssetRatio': 0.2635027687065171, 'liabilitiesAssetRatio': 0.5772504614510862}
+2025-06-24 15:30:19 - root - INFO - metrics [YearMetrics(year=2023, roe=-0.4252181719179997, debtAssetRatio=0.40362450538327044, currentRatio=0.9009059770762593, quickRatio=0.9008466659747039, operatingCashFlowPerShare=-1.1122508058244949, liabilitiesAssetRatio=0.6091895187264195), YearMetrics(year=2022, roe=-0.2509203622207177, debtAssetRatio=0.34923912034889115, currentRatio=0.6991621959285662, quickRatio=0.6991132015384238, operatingCashFlowPerShare=-1.4575704781518637, liabilitiesAssetRatio=0.5614363923169713), YearMetrics(year=2021, roe=0.5647413452899738, debtAssetRatio=0.2635027687065171, currentRatio=0.1365221574168721, quickRatio=0.13648207163329526, operatingCashFlowPerShare=2.005701479714472, liabilitiesAssetRatio=0.5772504614510862)]
+2025-06-24 15:30:19 - root - INFO - f_metrics ticker='GNFT.PA' companyName='Genfit S.A.' metrics=[YearMetrics(year=2023, roe=-0.4252181719179997, debtAssetRatio=0.40362450538327044, currentRatio=0.9009059770762593, quickRatio=0.9008466659747039, operatingCashFlowPerShare=-1.1122508058244949, liabilitiesAssetRatio=0.6091895187264195), YearMetrics(year=2022, roe=-0.2509203622207177, debtAssetRatio=0.34923912034889115, currentRatio=0.6991621959285662, quickRatio=0.6991132015384238, operatingCashFlowPerShare=-1.4575704781518637, liabilitiesAssetRatio=0.5614363923169713), YearMetrics(year=2021, roe=0.5647413452899738, debtAssetRatio=0.2635027687065171, currentRatio=0.1365221574168721, quickRatio=0.13648207163329526, operatingCashFlowPerShare=2.005701479714472, liabilitiesAssetRatio=0.5772504614510862)] metrics_cat=MetricsCategory(roe=[-0.4252181719179997, -0.2509203622207177, 0.5647413452899738], debtAssetRatio=[0.40362450538327044, 0.34923912034889115, 0.2635027687065171], currentRatio=[0.9009059770762593, 0.6991621959285662, 0.1365221574168721], quickRatio=[0.9008466659747039, 0.6991132015384238, 0.13648207163329526], operatingCashFlowPerShare=[-1.1122508058244949, -1.4575704781518637, 2.005701479714472], liabilitiesAssetRatio=[0.6091895187264195, 0.5614363923169713, 0.5772504614510862], year=[2023, 2022, 2021]): 
+2025-06-24 15:30:19 - root - INFO - read_fundamental_ratio result ticker='GNFT.PA' companyName='Genfit S.A.' metrics=[YearMetrics(year=2023, roe=-0.4252181719179997, debtAssetRatio=0.40362450538327044, currentRatio=0.9009059770762593, quickRatio=0.9008466659747039, operatingCashFlowPerShare=-1.1122508058244949, liabilitiesAssetRatio=0.6091895187264195), YearMetrics(year=2022, roe=-0.2509203622207177, debtAssetRatio=0.34923912034889115, currentRatio=0.6991621959285662, quickRatio=0.6991132015384238, operatingCashFlowPerShare=-1.4575704781518637, liabilitiesAssetRatio=0.5614363923169713), YearMetrics(year=2021, roe=0.5647413452899738, debtAssetRatio=0.2635027687065171, currentRatio=0.1365221574168721, quickRatio=0.13648207163329526, operatingCashFlowPerShare=2.005701479714472, liabilitiesAssetRatio=0.5772504614510862)] metrics_cat=MetricsCategory(roe=[-0.4252181719179997, -0.2509203622207177, 0.5647413452899738], debtAssetRatio=[0.40362450538327044, 0.34923912034889115, 0.2635027687065171], currentRatio=[0.9009059770762593, 0.6991621959285662, 0.1365221574168721], quickRatio=[0.9008466659747039, 0.6991132015384238, 0.13648207163329526], operatingCashFlowPerShare=[-1.1122508058244949, -1.4575704781518637, 2.005701479714472], liabilitiesAssetRatio=[0.6091895187264195, 0.5614363923169713, 0.5772504614510862], year=[2023, 2022, 2021])
+2025-06-24 15:30:24 - uvicorn.error - INFO - Shutting down
+2025-06-24 15:30:24 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-24 15:30:24 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-24 15:30:24 - uvicorn.error - INFO - Finished server process [20727]
+2025-06-24 15:30:24 - uvicorn.error - INFO - Stopping reloader process [20717]

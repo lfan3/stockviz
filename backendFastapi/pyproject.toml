@@ -1,0 +1,16 @@
+[project]
+name = "stockscanner"
+version = "0.1.0"
+description = "fastapi project for stock analyse"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "akshare>=1.16.95",
+    "fastapi[standard]>=0.115.12",
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "pandas>=2.2.3",
+    "pydantic>=2.11.5",
+    "ruff>=0.11.11",
+    "yfinance>=0.2.61",
+]

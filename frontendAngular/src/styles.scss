@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+
+/* For outline inputs */
+
+.mat-mdc-form-field {
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled) {
+    .mdc-notched-outline {
+      border: 2px solid #e2e8f0 !important;
+      border-radius: 0.3rem !important;
+      transition: all 0.3s ease;
+    }
+
+    .mdc-notched-outline__leading,
+    .mdc-notched-outline__notch,
+    .mdc-notched-outline__trailing {
+      border: none !important;
+    }
+  }
+  .mat-mdc-form-field-subscript-wrapper.mat-mdc-form-field-bottom-align {
+    display: none !important;
+  }
+}

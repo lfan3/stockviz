@@ -1,0 +1,20 @@
+<div>
+  <app-sticker-input
+    placeholder="stock ticker..."
+    prefixIcon="edit"
+    suffixIcon="send"
+    hint="Press Enter to send"
+  ></app-sticker-input>
+  @if (isLoading()) {
+  <p>Loading</p>
+  } @else if( metricsCategoryObjEntry().length) { 
+    @for (category of metricsCategoryObjEntry(); track category[0]) { 
+      @if(ticker() && category[0] !="year"){
+        <app-general-bar
+          [ticker]="ticker()"
+          [financialCategory]="category[0]"
+          [data]="category[1]"
+        >
+        </app-general-bar>
+      } } }
+</div>
