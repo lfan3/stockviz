@@ -1,10 +1,16 @@
-import { Component, computed, inject, input, OnInit } from '@angular/core';
+import { afterNextRender, Component, computed, inject, input, OnChanges, OnInit, Signal, SimpleChanges, viewChild } from '@angular/core';
 import {
   NgApexchartsModule,
   ApexAxisChartSeries,
   ApexChart,
   ApexXAxis,
   ApexTitleSubtitle,
+  ApexYAxis,
+  ApexDataLabels,
+  ApexPlotOptions,
+  ApexGrid,
+  ApexLegend,
+  ChartComponent
 } from 'ng-apexcharts';
 import { FundamentalService } from '../../services/fundamental.service';
 
@@ -13,6 +19,10 @@ export type ChartOptions = {
   chart: ApexChart;
   xaxis: ApexXAxis;
   title: ApexTitleSubtitle;
+  yaxis: ApexYAxis;
+  dataLabels: ApexDataLabels;
+  plotOptions?: ApexPlotOptions;
+  grid: ApexGrid;
 };
 
 @Component({
@@ -26,17 +36,12 @@ export type ChartOptions = {
   }`,
 })
 export class GeneralBarComponent {
-  public chartOptions: ChartOptions;
-
-  ticker = input<string>('');
-  // data = input.required();
-  // financialCategory = input.required<string>();
-  financialCategory = input<string>('');
-  // ticker = input('abc');
-  data = input({});
-
+  apexChart = viewChild.required<ChartComponent>('chart');
+  ticker = input<string>('company');
+  financialCategory = input<string>('roe');
+  seriesData = input<number[]>([0.23453453, 0.45539049, 1.24893434]);
   xCat = input<string[] | number[]>([
-    2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028,
+    2020, 2021, 2022,
   ]);
   title = computed(() => {
     return `${this.ticker()} - ${this.financialCategory().toUpperCase()}`;
@@ -44,26 +49,76 @@ export class GeneralBarComponent {
 
   chart = input<ApexChart>({
     height: 350,
-    width: 500,
+    width: 400,
     type: 'bar',
   });
-  seriesData = input<number[]>([0]);
 
-  constructor() {
-    this.chartOptions = {
+
+  chartOptions: Signal<ChartOptions> = computed(() => {
+    return {
       series: [
         {
           name: this.financialCategory(),
-          data: this.seriesData(),
+          data: this.seriesData().map(num => parseFloat(num.toFixed(2))),
         },
       ],
       chart: this.chart(),
       title: {
         text: this.title(),
       },
+      grid: {
+        borderColor: '#e324a7',
+        row: {
+          colors: ['#f3f3f3', 'transparent'],
+        }
+      },
       xaxis: {
         categories: this.xCat(),
+        axisBorder: {
+          show: true,
+          color: '#e324a7',
+          strokeWidth: 100
+        },
+        axisTicks: {
+          show: true,
+          color: '#e324a7',
+        }
       },
-    };
+      yaxis: {
+        title: {
+          text: "$ (thousands)",
+          style: {
+            fontSize: '12px',
+            fontWeight: 'bold'
+          }
+        },
+        axisBorder: {
+          show: true,
+          color: '#e324a7',
+          strokeWidth: 100
+        },
+      },
+      dataLabels: {
+        textAnchor: 'middle',
+        style: {
+          fontSize: '12px',
+          colors: ['white']
+        }
+      }
+    }
+  })
+
+  constructor() {
+    afterNextRender(() => {
+      console.log("cahrt ref:", this.apexChart())
+      console.log("cahrt ref:", this.apexChart()?.chart())
+      console.log("cahrt ref:", this.apexChart()?.chartInstance())
+      console.log("cahrt ref:", this.apexChart()?.dataLabels())
+    })
+
   }
+
+
+
+
 }

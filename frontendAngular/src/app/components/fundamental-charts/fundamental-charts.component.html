@@ -5,16 +5,27 @@
     suffixIcon="send"
     hint="Press Enter to send"
   ></app-sticker-input>
+  <div class="flex w-full flex-wrap justify-around gap-8 my-6 px-6">
   @if (isLoading()) {
-  <p>Loading</p>
-  } @else if( metricsCategoryObjEntry().length) { 
+    <p>Loading</p>
+  } 
+  @else {
+   @if( metricsCategoryObjEntry().length) { 
     @for (category of metricsCategoryObjEntry(); track category[0]) { 
       @if(ticker() && category[0] !="year"){
         <app-general-bar
           [ticker]="ticker()"
           [financialCategory]="category[0]"
-          [data]="category[1]"
+          [xCat]="years()"
+          [seriesData]="category[1]"
         >
         </app-general-bar>
-      } } }
+      } 
+    }
+    <!-- default data -->
+    <!-- <app-general-bar ></app-general-bar> -->
+  }
+  }
+  </div>
+  <!-- <app-example-char></app-example-char> -->
 </div>

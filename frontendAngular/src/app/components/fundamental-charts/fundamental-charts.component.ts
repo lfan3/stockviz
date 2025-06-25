@@ -7,10 +7,11 @@ import {
 import { FundamentalService } from '../../services/fundamental.service';
 import { StickerInputComponent } from '../../components/sticker-input/sticker-input.component';
 import { GeneralBarComponent } from '../../components/general-bar/general-bar.component';
+import { ExampleCharComponent } from '../example-char/example-char.component';
 
 @Component({
   selector: 'app-fundamental-charts',
-  imports: [StickerInputComponent, GeneralBarComponent],
+  imports: [StickerInputComponent, GeneralBarComponent, ExampleCharComponent],
   standalone: true,
   templateUrl: './fundamental-charts.component.html',
   styles: ``,
@@ -19,10 +20,11 @@ export class FundamentalChartsComponent {
   fundamentalSerivice = inject(FundamentalService);
   isLoading = computed(() => this.fundamentalSerivice.isLoading());
   metricsValue = computed(() => this.fundamentalSerivice.fundamentalData());
-  metricsCategory = computed(() => this.metricsValue()?.metrics_cat || {});
+  metricsCategory = computed(() => this.metricsValue()?.metrics_cat || { year: [] });
   metricsCategoryObjEntry = computed(
     () => Object.entries(this.metricsCategory()) as [string, number[]][]
   );
+  years = computed(() => this.metricsCategory()?.year)
   ticker = computed(() => this.fundamentalSerivice.tickerInput() || 'Default');
 
   constructor() {

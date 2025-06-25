@@ -1,8 +1,11 @@
 <div style="text-align: center; margin-top: 12px">
   <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [xaxis]="chartOptions.xaxis"
-    [title]="chartOptions.title"
+    #chart
+    [series]="chartOptions().series"
+    [chart]="chartOptions().chart"
+    [xaxis]="chartOptions().xaxis"
+    [title]="chartOptions().title"
+    [yaxis]="chartOptions().yaxis"
+    [dataLabels]="chartOptions().dataLabels"
   ></apx-chart>
 </div>
