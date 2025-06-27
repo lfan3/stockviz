@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "akshare>=1.16.95",
     "fastapi[standard]>=0.115.12",
+    "ipykernel>=6.29.5",
     "matplotlib>=3.10.3",
     "numpy>=2.2.6",
     "pandas>=2.2.3",

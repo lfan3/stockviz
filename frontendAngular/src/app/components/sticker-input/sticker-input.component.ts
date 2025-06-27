@@ -5,7 +5,7 @@ import {
   YearMetrics,
   FundamentalMetrics,
 } from '../../models/fundamental.model';
-import { FundamentalService } from '../../services/fundamental.service';
+import { FundamentalService } from '../../services/fundamentalService/fundamental.service';
 
 @Component({
   selector: 'app-sticker-input',
@@ -16,12 +16,15 @@ import { FundamentalService } from '../../services/fundamental.service';
 })
 export class StickerInputComponent {
   protected service = inject(FundamentalService);
+  ticketValue = signal<string>('GNFT.PA');
+
 
   onSubmitFundamental() {
-    this.service.getFundamentalData().subscribe();
+    this.service.getFundamentalData(this.ticketValue()).subscribe();
   }
 
   onTickerValueChanged(value: string) {
-    this.service.updateTickerInput(value);
+    // this.service.updateTickerInput(value);
+    this.ticketValue.set(value)
   }
 }

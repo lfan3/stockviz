@@ -13,7 +13,7 @@ export class CoreService {
   public isLoading = this.loading.asReadonly();
   public errorMessage = this.error.asReadonly();
 
-  constructor() {}
+  constructor() { }
 
   protected apiCall<T>(request: Observable<T>): Observable<T> {
     this.loading.set(true);
@@ -29,11 +29,10 @@ export class CoreService {
 
   protected handleError(error: HttpErrorResponse) {
     // Handle the error appropriately
-    console.error('An error occurred:', error);
     this.error.set(error.message || 'Unknown error');
 
     return throwError(
-      () => new Error('Something bad happened; please try again later.')
+      () => error
     );
   }
 }

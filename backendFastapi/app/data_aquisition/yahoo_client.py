@@ -28,7 +28,7 @@ class YahooFinanceClient:
 
         return CompanyInfo(companyName=self.ticker_obj.info.get("longName", "N/A"))
 
-    def get_all_data(self, printCsv=False) -> tuple[pd.DataFrame, pd.DataFrame]:
+    def get_financial_data(self, printCsv=True) -> tuple[pd.DataFrame, pd.DataFrame]:
         """
         Fetches financial data for a given ticker from Yahoo Finance.
 
@@ -60,3 +60,17 @@ class YahooFinanceClient:
         except Exception as e:
             logger.error(f"Error fetching data for {self.ticker}: {e}")
             raise e
+
+    def get_price_data(self, period, interval, progress=False):
+        try:
+            data = yf.download(
+                tickers=self.ticker,
+                period=period,  # 1d, 5d, 1mo, 1y, max
+                interval=interval,  # 1m, 1h, 1d, 1wk
+                progress=progress,  # Disable progress bar
+            )
+            # data.to_csv(f"{data_aquisition_folder}/price_{self.ticker}_daily.csv")
+            return data
+        except Exception as e:
+            logger.error(f"get_price_data error for {self.ticker}: {e}")
+

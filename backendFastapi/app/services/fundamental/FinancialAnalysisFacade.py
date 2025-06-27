@@ -1,7 +1,11 @@
 from app.data_aquisition import YahooFinanceClient
 from app.models import FundamentalMetrics
 from app.utils import RowManager, get_logger
-from app.data_procesing import BalanceSheetCleanStrategy, DataCleaner, MetricsDataExtractor
+from app.data_procesing import (
+    BalanceSheetCleanStrategy,
+    DataCleaner,
+    MetricsDataExtractor,
+)
 from typing import Tuple, Optional
 
 logger = get_logger(__name__)
@@ -13,7 +17,7 @@ class FinancialAnalysisFacade:
 
         try:
             yhclient = YahooFinanceClient(ticker)
-            balance_sheet, cashflow = yhclient.get_all_data(printCsv=True)
+            balance_sheet, cashflow = yhclient.get_financial_data(printCsv=True)
             info = yhclient.get_company_info()
             bs_row_manager = RowManager(balance_sheet)
             cf_row_manager = RowManager(cashflow)

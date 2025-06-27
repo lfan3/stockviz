@@ -1,0 +1,403 @@
+2025-06-26 13:39:19 - uvicorn.error - INFO - Started server process [11539]
+2025-06-26 13:39:19 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:39:19 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:40:06 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:40:07 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:40:07 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:40:07 - uvicorn.error - INFO - Finished server process [11539]
+2025-06-26 13:40:08 - uvicorn.error - INFO - Started server process [12180]
+2025-06-26 13:40:08 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:40:08 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:41:19 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:41:20 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:41:20 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:41:20 - uvicorn.error - INFO - Finished server process [12180]
+2025-06-26 13:41:20 - uvicorn.error - INFO - Started server process [13665]
+2025-06-26 13:41:20 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:41:20 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:43:00 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:43:00 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:43:00 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:43:00 - uvicorn.error - INFO - Finished server process [13665]
+2025-06-26 13:43:01 - uvicorn.error - INFO - Started server process [15165]
+2025-06-26 13:43:01 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:43:01 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:46:07 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:46:07 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:46:07 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:46:07 - uvicorn.error - INFO - Finished server process [15165]
+2025-06-26 13:46:08 - uvicorn.error - INFO - Started server process [17741]
+2025-06-26 13:46:08 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:46:08 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:46:13 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:46:13 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:46:13 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:46:13 - uvicorn.error - INFO - Finished server process [17741]
+2025-06-26 13:46:14 - uvicorn.error - INFO - Started server process [17884]
+2025-06-26 13:46:14 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:46:14 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:48:21 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:48:21 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:48:21 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:48:21 - uvicorn.error - INFO - Finished server process [17884]
+2025-06-26 13:48:22 - uvicorn.error - INFO - Started server process [19708]
+2025-06-26 13:48:22 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:48:22 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:49:25 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:49:25 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:49:25 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:49:25 - uvicorn.error - INFO - Finished server process [19708]
+2025-06-26 13:49:26 - uvicorn.error - INFO - Started server process [20638]
+2025-06-26 13:49:26 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:49:26 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:50:29 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:50:29 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:50:29 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:50:29 - uvicorn.error - INFO - Finished server process [20638]
+2025-06-26 13:52:11 - uvicorn.error - INFO - Started server process [23101]
+2025-06-26 13:52:11 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:52:11 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:52:12 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:52:12 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:52:12 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:52:12 - uvicorn.error - INFO - Finished server process [23101]
+2025-06-26 13:52:13 - uvicorn.error - INFO - Started server process [23121]
+2025-06-26 13:52:13 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:52:13 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:52:19 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:52:19 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:52:19 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:52:19 - uvicorn.error - INFO - Finished server process [23121]
+2025-06-26 13:52:20 - uvicorn.error - INFO - Started server process [23274]
+2025-06-26 13:52:20 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:52:20 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:52:44 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/main.py", line 61, in down_load_daily_price
+    ps.get_daily_price(ticker)
+TypeError: PriceService.get_daily_price() takes 1 positional argument but 2 were given
+2025-06-26 13:52:57 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:52:57 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:52:57 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:52:57 - uvicorn.error - INFO - Finished server process [23274]
+2025-06-26 13:52:58 - uvicorn.error - INFO - Started server process [23754]
+2025-06-26 13:52:58 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:52:58 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:53:01 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/main.py", line 60, in down_load_daily_price
+    ps = PriceService(ticker)
+         ^^^^^^^^^^^^^^^^^^^^
+TypeError: PriceService() takes no arguments
+2025-06-26 13:53:20 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:53:20 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:53:20 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:53:20 - uvicorn.error - INFO - Finished server process [23754]
+2025-06-26 13:53:21 - uvicorn.error - INFO - Started server process [24073]
+2025-06-26 13:53:21 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:53:21 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:53:27 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/main.py", line 61, in down_load_daily_price
+    ps.get_daily_price(ticker)
+TypeError: PriceService.get_daily_price() takes 1 positional argument but 2 were given
+2025-06-26 13:53:36 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:53:37 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:53:37 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:53:37 - uvicorn.error - INFO - Finished server process [24073]
+2025-06-26 13:53:38 - uvicorn.error - INFO - Started server process [24367]
+2025-06-26 13:53:38 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:53:38 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:53:39 - yfinance - DEBUG - Entering download()
+2025-06-26 13:53:39 - yfinance - DEBUG - Disabling multithreading because DEBUG logging enabled
+2025-06-26 13:53:39 - yfinance - DEBUG -  Entering history()
+2025-06-26 13:53:39 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-06-26 13:53:39 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['GNFT.PA', 1, 0])
+2025-06-26 13:53:39 - yfinance - DEBUG -   Entering _fetch_ticker_tz()
+2025-06-26 13:53:39 - yfinance - DEBUG -    Entering get()
+2025-06-26 13:53:39 - yfinance - DEBUG -     Entering _make_request()
+2025-06-26 13:53:39 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/GNFT.PA
+2025-06-26 13:53:39 - yfinance - DEBUG - params=frozendict.frozendict({'range': '1d', 'interval': '1d'})
+2025-06-26 13:53:39 - yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+2025-06-26 13:53:39 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-26 13:53:39 - yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG -         Entering _load_cookie_curlCffi()
+2025-06-26 13:53:39 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-26 13:53:39 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-26 13:53:39 - yfinance - DEBUG -         Exiting _load_cookie_curlCffi()
+2025-06-26 13:53:39 - yfinance - DEBUG - reusing persistent cookie
+2025-06-26 13:53:39 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG -        Entering _get_crumb_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG -         Entering _get_cookie_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG - reusing cookie
+2025-06-26 13:53:39 - yfinance - DEBUG -         Exiting _get_cookie_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-26 13:53:39 - yfinance - DEBUG -        Exiting _get_crumb_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+2025-06-26 13:53:39 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+2025-06-26 13:53:40 - yfinance - DEBUG - response code=200
+2025-06-26 13:53:40 - yfinance - DEBUG -     Exiting _make_request()
+2025-06-26 13:53:40 - yfinance - DEBUG -    Exiting get()
+2025-06-26 13:53:40 - yfinance - DEBUG -   Exiting _fetch_ticker_tz()
+2025-06-26 13:53:40 - peewee - DEBUG - ('BEGIN', None)
+2025-06-26 13:53:40 - peewee - DEBUG - ('INSERT INTO "_kv" ("key", "value") VALUES (?, ?)', ['GNFT.PA', 'Europe/Paris'])
+2025-06-26 13:53:40 - yfinance - DEBUG -   Entering history()
+2025-06-26 13:53:40 - yfinance - DEBUG - GNFT.PA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-06-26 13:53:40 - yfinance - DEBUG -    Entering get()
+2025-06-26 13:53:40 - yfinance - DEBUG -     Entering _make_request()
+2025-06-26 13:53:40 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/GNFT.PA
+2025-06-26 13:53:40 - yfinance - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-06-26 13:53:40 - yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+2025-06-26 13:53:40 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-26 13:53:40 - yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+2025-06-26 13:53:40 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-06-26 13:53:40 - yfinance - DEBUG - reusing cookie
+2025-06-26 13:53:40 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-06-26 13:53:40 - yfinance - DEBUG -        Entering _get_crumb_basic()
+2025-06-26 13:53:40 - yfinance - DEBUG - reusing crumb
+2025-06-26 13:53:40 - yfinance - DEBUG -        Exiting _get_crumb_basic()
+2025-06-26 13:53:40 - yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+2025-06-26 13:53:40 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+2025-06-26 13:53:40 - yfinance - DEBUG - response code=200
+2025-06-26 13:53:40 - yfinance - DEBUG -     Exiting _make_request()
+2025-06-26 13:53:40 - yfinance - DEBUG -    Exiting get()
+2025-06-26 13:53:40 - yfinance - DEBUG - GNFT.PA: yfinance received OHLC data: 2024-06-26 07:00:00 -> 2025-06-26 11:25:11
+2025-06-26 13:53:40 - yfinance - DEBUG - GNFT.PA: OHLC after cleaning: 2024-06-26 09:00:00+02:00 -> 2025-06-26 13:25:11+02:00
+2025-06-26 13:53:40 - yfinance - DEBUG - GNFT.PA: OHLC after combining events: 2024-06-26 00:00:00+02:00 -> 2025-06-26 00:00:00+02:00
+2025-06-26 13:53:40 - yfinance - DEBUG - GNFT.PA: yfinance returning OHLC: 2024-06-26 00:00:00+02:00 -> 2025-06-26 00:00:00+02:00
+2025-06-26 13:53:40 - yfinance - DEBUG -   Exiting history()
+2025-06-26 13:53:40 - yfinance - DEBUG -  Exiting history()
+2025-06-26 13:53:40 - yfinance - DEBUG - Exiting download()
+2025-06-26 13:55:29 - uvicorn.error - INFO - Shutting down
+2025-06-26 13:55:29 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 13:55:29 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 13:55:29 - uvicorn.error - INFO - Finished server process [24367]
+2025-06-26 13:55:30 - uvicorn.error - INFO - Started server process [26062]
+2025-06-26 13:55:30 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 13:55:30 - uvicorn.error - INFO - Application startup complete.
+2025-06-26 13:55:36 - yfinance - DEBUG - Entering download()
+2025-06-26 13:55:36 - yfinance - DEBUG - Disabling multithreading because DEBUG logging enabled
+2025-06-26 13:55:36 - yfinance - DEBUG -  Entering history()
+2025-06-26 13:55:36 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-06-26 13:55:36 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['GNFT.PA', 1, 0])
+2025-06-26 13:55:36 - yfinance - DEBUG -   Entering history()
+2025-06-26 13:55:36 - yfinance - DEBUG - GNFT.PA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-06-26 13:55:36 - yfinance - DEBUG -    Entering get()
+2025-06-26 13:55:36 - yfinance - DEBUG -     Entering _make_request()
+2025-06-26 13:55:36 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/GNFT.PA
+2025-06-26 13:55:36 - yfinance - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-06-26 13:55:36 - yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+2025-06-26 13:55:36 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-06-26 13:55:36 - yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+2025-06-26 13:55:36 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-06-26 13:55:36 - yfinance - DEBUG -         Entering _load_cookie_curlCffi()
+2025-06-26 13:55:36 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-06-26 13:55:36 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-06-26 13:55:36 - yfinance - DEBUG -         Exiting _load_cookie_curlCffi()
+2025-06-26 13:55:36 - yfinance - DEBUG - reusing persistent cookie
+2025-06-26 13:55:36 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-06-26 13:55:36 - yfinance - DEBUG -        Entering _get_crumb_basic()
+2025-06-26 13:55:36 - yfinance - DEBUG -         Entering _get_cookie_basic()
+2025-06-26 13:55:36 - yfinance - DEBUG - reusing cookie
+2025-06-26 13:55:36 - yfinance - DEBUG -         Exiting _get_cookie_basic()
+2025-06-26 13:55:37 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-06-26 13:55:37 - yfinance - DEBUG -        Exiting _get_crumb_basic()
+2025-06-26 13:55:37 - yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+2025-06-26 13:55:37 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+2025-06-26 13:55:37 - yfinance - DEBUG - response code=200
+2025-06-26 13:55:37 - yfinance - DEBUG -     Exiting _make_request()
+2025-06-26 13:55:37 - yfinance - DEBUG -    Exiting get()
+2025-06-26 13:55:37 - yfinance - DEBUG - GNFT.PA: yfinance received OHLC data: 2024-06-26 07:00:00 -> 2025-06-26 11:40:17
+2025-06-26 13:55:37 - yfinance - DEBUG - GNFT.PA: OHLC after cleaning: 2024-06-26 09:00:00+02:00 -> 2025-06-26 13:40:17+02:00
+2025-06-26 13:55:37 - yfinance - DEBUG - GNFT.PA: OHLC after combining events: 2024-06-26 00:00:00+02:00 -> 2025-06-26 00:00:00+02:00
+2025-06-26 13:55:37 - yfinance - DEBUG - GNFT.PA: yfinance returning OHLC: 2024-06-26 00:00:00+02:00 -> 2025-06-26 00:00:00+02:00
+2025-06-26 13:55:37 - yfinance - DEBUG -   Exiting history()
+2025-06-26 13:55:37 - yfinance - DEBUG -  Exiting history()
+2025-06-26 13:55:37 - yfinance - DEBUG - Exiting download()
+2025-06-26 13:55:37 - root - INFO - Price        Close  ...  Volume
+Ticker     GNFT.PA  ... GNFT.PA
+Date                ...        
+2025-06-20   3.392  ...  127820
+2025-06-23   3.352  ...  174301
+2025-06-24   3.380  ...  114942
+2025-06-25   3.326  ...  111758
+2025-06-26   3.378  ...   79128
+
+[5 rows x 5 columns]
+2025-06-26 15:03:39 - uvicorn.error - INFO - Shutting down
+2025-06-26 15:03:39 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-26 15:03:39 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-26 15:03:39 - uvicorn.error - INFO - Finished server process [26062]
+2025-06-26 15:03:40 - uvicorn.error - INFO - Started server process [27763]
+2025-06-26 15:03:40 - uvicorn.error - INFO - Waiting for application startup.
+2025-06-26 15:03:40 - uvicorn.error - INFO - Application startup complete.
+2025-06-27 11:13:31 - uvicorn.error - INFO - Shutting down
+2025-06-27 11:13:31 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-06-27 11:13:31 - uvicorn.error - INFO - Application shutdown complete.
+2025-06-27 11:13:31 - uvicorn.error - INFO - Finished server process [27763]

@@ -4,14 +4,13 @@ import {
   FundamentalMetrics,
   MetricsCategory,
 } from '../../models/fundamental.model';
-import { FundamentalService } from '../../services/fundamental.service';
+import { FundamentalService } from '../../services/fundamentalService/fundamental.service';
 import { StickerInputComponent } from '../../components/sticker-input/sticker-input.component';
 import { GeneralBarComponent } from '../../components/general-bar/general-bar.component';
-import { ExampleCharComponent } from '../example-char/example-char.component';
 
 @Component({
   selector: 'app-fundamental-charts',
-  imports: [StickerInputComponent, GeneralBarComponent, ExampleCharComponent],
+  imports: [StickerInputComponent, GeneralBarComponent],
   standalone: true,
   templateUrl: './fundamental-charts.component.html',
   styles: ``,

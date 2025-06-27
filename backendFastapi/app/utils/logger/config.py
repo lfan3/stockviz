@@ -22,7 +22,7 @@ LOGGING_CONFIG = {
             "formatter": "standard",
             "class": "logging.handlers.RotatingFileHandler",
             "filename": f"logs/app_{datetime.now().strftime('%Y%m%d')}.log",
-            "mode": 'a',  # 'a' for append (default), creates file if doesn't exist
+            "mode": "a",  # 'a' for append (default), creates file if doesn't exist
             "maxBytes": 10485760,  # 10MB
             "backupCount": 1,
             "encoding": "utf-8",

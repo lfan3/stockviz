@@ -13,7 +13,7 @@ def setup_logging():
     except PermissionError as e:
         print(f"Permission denied for logs directory: {log_dir}")
         # Fallback to console-only logging
-        LOGGING_CONFIG['loggers']['']['handlers'] = ['console']
+        LOGGING_CONFIG["loggers"][""]["handlers"] = ["console"]
         logging.config.dictConfig(LOGGING_CONFIG)
     except Exception as e:
         print(f"Failed to configure logging: {str(e)}")

@@ -5,7 +5,7 @@ from typing import Union
 from fastapi import FastAPI, HTTPException
 
 # from services.fundamental.fundamental import Fundamental
-from app.services import FinancialAnalysisFacade
+from app.services import FinancialAnalysisFacade, PriceService
 from app.models import FundamentalMetrics
 
 from app.utils.logger import setup_logging, get_logger
@@ -54,3 +54,9 @@ def read_fundamental_ratio(ticker: str) -> FundamentalMetrics:
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/price/{ticker}")
+def down_load_daily_price(ticker: str):
+    ps = PriceService(ticker)
+    ps.get_daily_price()
+

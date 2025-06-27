@@ -4,12 +4,12 @@ from pydantic import BaseModel, Field
 class YearMetrics(BaseModel):
     year: int = Field(..., description="Year of the financial metrics")
     roe: float = Field(0.0, description="Return on equity for the year")
-    debtAssetRatio: float = Field(0.0, description="Debt to asset ratio for the year")
-    currentRatio: float = Field(0.0, description="Current ratio for the year")
-    quickRatio: float = Field(0.0, description="Quick ratio for the year")
     operatingCashFlowPerShare: float = Field(
         0.0, description="Operating cash flow per share for the year"
     )
+    debtAssetRatio: float = Field(0.0, description="Debt to asset ratio for the year")
+    currentRatio: float = Field(0.0, description="Current ratio for the year")
+    quickRatio: float = Field(0.0, description="Quick ratio for the year")
     liabilitiesAssetRatio: float = Field(
         0.0, description="Liabilities to asset ratio for the year"
     )
@@ -25,6 +25,10 @@ class MetricsCategory(BaseModel):
         ...,
         description="list of Return on Equity values (Net income/Shareholders' equity) as percentages",
     )
+    operatingCashFlowPerShare: list[float] = Field(
+        ...,
+        description="list of Operating cash flow per share values (Operating cash flow/Outstanding shares)",
+    )
     debtAssetRatio: list[float] = Field(
         ...,
         description="list of Debt-to-Asset ratios (Total debt/Total assets) as decimals",
@@ -36,10 +40,7 @@ class MetricsCategory(BaseModel):
         ...,
         description="list of Quick ratios ((Current assets - Inventory)/Current liabilities)",
     )
-    operatingCashFlowPerShare: list[float] = Field(
-        ...,
-        description="list of Operating cash flow per share values (Operating cash flow/Outstanding shares)",
-    )
+
     liabilitiesAssetRatio: list[float] = Field(
         ...,
         description="list of Liabilities-to-Asset ratios (Total liabilities/Total assets) as decimals",

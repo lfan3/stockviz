@@ -12,7 +12,7 @@ import {
   ApexLegend,
   ChartComponent
 } from 'ng-apexcharts';
-import { FundamentalService } from '../../services/fundamental.service';
+import { FundamentalService } from '../../services/fundamentalService/fundamental.service';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -22,7 +22,6 @@ export type ChartOptions = {
   yaxis: ApexYAxis;
   dataLabels: ApexDataLabels;
   plotOptions?: ApexPlotOptions;
-  grid: ApexGrid;
 };
 
 @Component({
@@ -44,13 +43,25 @@ export class GeneralBarComponent {
     2020, 2021, 2022,
   ]);
   title = computed(() => {
-    return `${this.ticker()} - ${this.financialCategory().toUpperCase()}`;
+    return `${this.ticker()} - ${this.getTitle(this.financialCategory()).toUpperCase()}`;
   });
+
+  constructor() {
+    afterNextRender(() => {
+      console.log("cahrt ref:", this.apexChart())
+      console.log("cahrt ref:", this.apexChart()?.chart())
+      console.log("cahrt ref:", this.apexChart()?.chartInstance())
+      console.log("cahrt ref:", this.apexChart()?.dataLabels())
+    })
+  }
 
   chart = input<ApexChart>({
     height: 350,
     width: 400,
     type: 'bar',
+    toolbar: {
+      show: false
+    }
   });
 
 
@@ -66,36 +77,19 @@ export class GeneralBarComponent {
       title: {
         text: this.title(),
       },
-      grid: {
-        borderColor: '#e324a7',
-        row: {
-          colors: ['#f3f3f3', 'transparent'],
-        }
-      },
+
       xaxis: {
         categories: this.xCat(),
         axisBorder: {
           show: true,
-          color: '#e324a7',
-          strokeWidth: 100
         },
         axisTicks: {
           show: true,
-          color: '#e324a7',
         }
       },
       yaxis: {
-        title: {
-          text: "$ (thousands)",
-          style: {
-            fontSize: '12px',
-            fontWeight: 'bold'
-          }
-        },
         axisBorder: {
           show: true,
-          color: '#e324a7',
-          strokeWidth: 100
         },
       },
       dataLabels: {
@@ -108,15 +102,24 @@ export class GeneralBarComponent {
     }
   })
 
-  constructor() {
-    afterNextRender(() => {
-      console.log("cahrt ref:", this.apexChart())
-      console.log("cahrt ref:", this.apexChart()?.chart())
-      console.log("cahrt ref:", this.apexChart()?.chartInstance())
-      console.log("cahrt ref:", this.apexChart()?.dataLabels())
-    })
-
+  private getTitle(financialCategory: string) {
+    switch (financialCategory) {
+      case 'debtAssetRatio':
+        return 'Debt to Asset Ratio'
+      case 'currentRatio':
+        return 'Current Ratio'
+      case 'quickRatio':
+        return 'Quick Ratio'
+      case 'operatingCashFlowPerShare':
+        return 'Cash flow per share'
+      case 'liabilitiesAssetRatio':
+        return 'Liabilities to Assets'
+      default:
+        return 'ROE'
+    }
   }
+
+
 
 
 
