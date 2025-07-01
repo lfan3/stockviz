@@ -1,4 +1,6 @@
+from token import OP
 from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class YearMetrics(BaseModel):
@@ -29,16 +31,20 @@ class MetricsCategory(BaseModel):
         ...,
         description="list of Operating cash flow per share values (Operating cash flow/Outstanding shares)",
     )
-    debtAssetRatio: list[float] = Field(
+    debtAssetRatio: Optional[list[float]] = Field(
         ...,
         description="list of Debt-to-Asset ratios (Total debt/Total assets) as decimals",
     )
     currentRatio: list[float] = Field(
         ..., description="list of Current ratios (Current assets/Current liabilities)"
     )
-    quickRatio: list[float] = Field(
+    quickRatio: Optional[list[float]] = Field(
         ...,
         description="list of Quick ratios ((Current assets - Inventory)/Current liabilities)",
+    )
+    grossProfit: Optional[list[float]] = Field(
+        ...,
+        description="list of gross profit",
     )
 
     liabilitiesAssetRatio: list[float] = Field(

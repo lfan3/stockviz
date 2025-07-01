@@ -1,4 +1,3 @@
-from numpy import integer
 from app.core import ROW_ALIASES
 from app.utils.logger import get_logger
 from app.models import YearMetrics, MetricsCategory

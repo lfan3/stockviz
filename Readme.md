@@ -2,7 +2,8 @@
 - change the ratio to show, add gross profit,net profit, remove liability ratio
 - check the algorithem of calculation. It is not very fiable and depending the company, sometimes it does not work. 
   create a data analyse part with Jupiter to check the fiability of algo
-- create a chart
+- need to know how to draw a line with mouse
+- need to create a csv client
 ## ideas of features:
 1 show fundamental analyse with yahoo
 2 create a list of stocks and give the reason why choose them, add a stock to a list, create a page to show the table of list. each row: tiker, category, reason, edit/delete. so we can filter by the category. the category can be managed. the each row can be edited by a model.

@@ -1,6 +1,6 @@
 import { Component, afterNextRender, ElementRef, ViewChild, signal, input } from '@angular/core';
-import { createChart, CrosshairMode, DeepPartial, LineStyle, TimeChartOptions, IChartApi, CandlestickSeries } from 'lightweight-charts';
-import { candlestickData } from '../../services/mockData'
+import { createChart, CrosshairMode, DeepPartial, LineStyle, TimeChartOptions, IChartApi, CandlestickSeries, HistogramSeries } from 'lightweight-charts';
+import { gnft_data } from '../../mock/gnft'
 
 @Component({
   selector: 'app-price-chart',
@@ -10,7 +10,7 @@ import { candlestickData } from '../../services/mockData'
     .chart-container {
       width: 100%;
       height: 600px;
-      margin: 12px;
+      padding-left: 12px;
     }
   `],
   standalone: true,
@@ -19,8 +19,7 @@ export class PriceChartComponent {
   @ViewChild('chartContainer') chartContainer!: ElementRef
   chart!: IChartApi
   candleSeries: any
-
-
+  volumeSeries: any
 
   constructor() {
     afterNextRender(() => {
@@ -33,7 +32,7 @@ export class PriceChartComponent {
     const chartOptions = {
       layout: {
         textColor: 'black',
-        background: { color: 'white' }
+        background: { color: 'white' },
       },
       crosshair: {
         mode: CrosshairMode.Normal,
@@ -43,19 +42,47 @@ export class PriceChartComponent {
       },
       width: this.chartContainer.nativeElement.clientWidth,
       height: 500,
+      // panes: {
+      //   separatorColor: '#6290ff',
+      //   separatorHoverColor: '#90ff80',
+      //   enableResize: false,
+      // }
     }
     this.chart = createChart(this.chartContainer.nativeElement, chartOptions)
-    console.log("char", this.chart)
-    console.log("char native", this.chartContainer.nativeElement)
-
+    // this.chart.priceScale('right').applyOptions({
+    //   scaleMargins: {
+    //     top: 0.1, // 10% margin for price chart
+    //     bottom: 0.4 // 40% margin for volume (leaves space)
+    //   }
+    // });
+    this.chart.applyOptions({
+      layout: {
+        panes: {
+          separatorColor: '#26a69a',
+          separatorHoverColor: '#00fff0',
+          enableResize: false,
+        },
+      },
+    });
     this.candleSeries = this.chart.addSeries(CandlestickSeries, {
       upColor: '#26a69a', downColor: '#ef5350',
       wickUpColor: '#26a69a', wickDownColor: '#ef5350'
     });
+
+    this.volumeSeries = this.chart.addSeries(HistogramSeries, {
+      priceFormat: { type: 'volume' },
+      color: '#26a69a80',
+    }, 1)
   }
 
   loadData() {
-    this.candleSeries.setData(candlestickData);
+    this.candleSeries.setData(gnft_data);
+    const volumeData = gnft_data.map(d => ({
+      time: d.time,
+      value: d.volume
+    }))
+
+    this.volumeSeries.setData(volumeData)
   }
 
 

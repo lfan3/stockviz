@@ -1,6 +1,21 @@
+## 07/07/2025
+- test on cac40, create a list of cac40 and when click on it, turn to the analyse visual page
+## 06/07/2025
+- do some analyse to the calculation metric algo and try to solve some inconsistancy problem
+## 05/07/2025
+- keep trace the last 10 recently visited company
+## 04/07/2025
+- make a duckdb to trace the file existant of csv
+## 03/07/2025
+- try to use mouse to draw a line
+## 02/07/2025
+- make csv client and returned the data
+- show the data on frontend
+## 01/07/2025
+- make csv client 
 ## 27/06/2025
 - make a api call to yahoo and store in json local file to moke frontend data - done
-- show the mock data and improve the charts's funcionalities
+- show the mock data and improve the charts's funcionalities - done
 ## 26/06/2025
 - show the price on the graphe -done
 - convert the donner to the frontend need format and show it

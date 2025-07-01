@@ -1,5 +1,4 @@
 from doctest import debug
-import string
 from typing import Union
 
 from fastapi import FastAPI, HTTPException
@@ -11,6 +10,7 @@ from app.models import FundamentalMetrics
 from app.utils.logger import setup_logging, get_logger
 
 from fastapi.middleware.cors import CORSMiddleware
+
 
 setup_logging()
 logging = get_logger(__name__)
@@ -55,8 +55,21 @@ def read_fundamental_ratio(ticker: str) -> FundamentalMetrics:
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/api/fundamental/chinese/{ticker}")
+def read_fundamental_ratio_cn(ticker: str):
+    fa = FinancialAnalysisFacade()
+    try:
+        if not ticker or not ticker.strip():
+            raise HTTPException(
+                status_code=400, detail="Ticker symbol is required and cannot be empty"
+            )
+        fa.excel_result(ticker)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.get("/api/price/{ticker}")
 def down_load_daily_price(ticker: str):
     ps = PriceService(ticker)
     ps.get_daily_price()
+
 

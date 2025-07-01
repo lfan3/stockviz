@@ -1,4 +1,5 @@
 from app.data_aquisition import YahooFinanceClient
+from app.data_aquisition import CSVClient
 from app.models import FundamentalMetrics
 from app.utils import RowManager, get_logger
 from app.data_procesing import (
@@ -44,6 +45,15 @@ class FinancialAnalysisFacade:
         except Exception as err:
             logger.error(f"full_analysis error: {str(err)}")
             return None
+
+    def excel_result(self,ticker):
+        logger.info(f"Excel result: {ticker}")
+        xtlClient = CSVClient()
+        data = xtlClient.get_financial_data(ticker)
+
+        # extractor = MetricsDataExtractor()
+
+
 
 
 # {'operating_self.cash_flow': -72638000.0, 'shares_outstanding': 49834983.0, 'stockholders_equity': 94528000.0, 'net_income': -23719000.0, 'current_assets': 57081000.0, 'current_liabilities': 81642000.0, 'inventory': 4000.0, 'total_liabilities': 121012000.0, 'total_debt': 75275000.0, 'total_assets': 215540000.0}

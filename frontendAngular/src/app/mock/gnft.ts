@@ -1,4 +1,4 @@
-[
+export const gnft_data = [
     {
         "time": "2024-06-27",
         "open": 3.714999914169311,

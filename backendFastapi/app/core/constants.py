@@ -20,6 +20,15 @@ ROW_ALIASES = {
     "operating cash flow": ["operating cash flow"],
 }
 
+ROW_ALIASES_CN = {
+    "净利润": 'net_income',
+    "每股经营现金流":"operatingCashFlowPerShare",
+    "销售毛利率":'grossProfit',
+    "净资产收益率":"roe",
+    "流动比率":'currentRatio',
+    "资产负债率":'liabilitiesAssetRatio'
+}
+
 CAC40 = [
     "AC.PA",
     "AI.PA",

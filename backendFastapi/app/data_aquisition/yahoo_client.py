@@ -6,7 +6,9 @@ from app.utils import get_logger
 
 
 logger = get_logger(__name__)
-data_aquisition_folder = Path(__file__).parent
+data_pool_folder = Path(__file__).parent
+data_pool_folder = Path(__file__).parent.parent.joinpath('data_pool') 
+print("folder", data_pool_folder)
 
 
 class YahooFinanceClient:
@@ -50,10 +52,10 @@ class YahooFinanceClient:
                 raise ValueError(f"No cash_flow data found for ticker: {self.ticker}")
             if printCsv:
                 cash_flow.to_csv(
-                    f"{data_aquisition_folder}/cash_flow_{self.ticker}.csv"
+                    f"{data_pool_folder}/cash_flow_{self.ticker}.csv"
                 )
                 balance_sheet.to_csv(
-                    f"{data_aquisition_folder}/balance_sheet_{self.ticker}.csv"
+                    f"{data_pool_folder}/balance_sheet_{self.ticker}.csv"
                 )
 
             return balance_sheet, cash_flow
@@ -69,7 +71,7 @@ class YahooFinanceClient:
                 interval=interval,  # 1m, 1h, 1d, 1wk
                 progress=progress,  # Disable progress bar
             )
-            # data.to_csv(f"{data_aquisition_folder}/price_{self.ticker}_daily.csv")
+            # data.to_csv(f"{data_pool_folder}/price_{self.ticker}_daily.csv")
             return data
         except Exception as e:
             logger.error(f"get_price_data error for {self.ticker}: {e}")
