@@ -27,5 +27,16 @@
   }
   }
   </div>
+  @if(chinese()?.length > 2){
+  <app-general-bar
+    [ticker]="ticker()"
+    [financialCategory]="'test'"
+    [xCat]="chinese()[0]"
+    [seriesData]="chinese()[2]"
+  >
+
+  </app-general-bar>
+  }
+
   <!-- <app-example-char></app-example-char> -->
 </div>

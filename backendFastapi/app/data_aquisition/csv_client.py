@@ -19,14 +19,10 @@ class CSVClient:
             filePath = data_aquisition_folder.joinpath(filename)
             logger.info(f"xtl filepath: {filePath}")
             df =  pd.read_csv(filePath, sep=";")
-            keys = ROW_ALIASES_CN.keys()
-            # logger.info("colums", df.columns.to_list(), df['科目\时间'])
+            terms = list(ROW_ALIASES_CN.values())[:6]
             df.set_index('科目\时间', inplace=True)
             df.rename(index=ROW_ALIASES_CN, inplace=True)
-            logger.info("index", df.index.to_list())
-            
-            # data = data[["净资产收益率","净利润"]]
-            # data.rename(columns=ROW_ALIASES_CN)
+            return df.loc[terms]        
         except Exception as e:
             logger.error(f"get_financial_data {ticker} error: ", e)
 

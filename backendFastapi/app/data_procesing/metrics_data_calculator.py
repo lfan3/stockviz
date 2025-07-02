@@ -163,6 +163,7 @@ class MetricsDataExtractor:
         operatingCashFlowPerShare: list[float] = []
         liabilitiesAssetRatio: list[float] = []
         year: list[int] = []
+        
 
         logging.info("metrics_per_year", metrics_per_year)
 
@@ -176,7 +177,8 @@ class MetricsDataExtractor:
             liabilitiesAssetRatio.append(metric.liabilitiesAssetRatio)
 
         return MetricsCategory(
-            year=year,
+            time=year,
+            timeType= 'year',
             roe=roe,
             debtAssetRatio=debtAssetRatio,
             currentRatio=currentRatio,

@@ -6,8 +6,10 @@ from app.data_procesing import (
     BalanceSheetCleanStrategy,
     DataCleaner,
     MetricsDataExtractor,
+    MetricsDataExtractorCn,
 )
-from typing import Tuple, Optional
+from typing import Optional
+
 
 logger = get_logger(__name__)
 
@@ -38,7 +40,7 @@ class FinancialAnalysisFacade:
                 ticker=ticker,
                 companyName=info.companyName,
                 metrics=metrics,
-                metrics_cat=metrics_cat,
+                metrics_cat_year=metrics_cat,
             )
             logger.info("f_metrics %s: ", f_metrics)
             return f_metrics
@@ -47,9 +49,19 @@ class FinancialAnalysisFacade:
             return None
 
     def excel_result(self,ticker):
-        logger.info(f"Excel result: {ticker}")
         xtlClient = CSVClient()
         data = xtlClient.get_financial_data(ticker)
+        calculator = MetricsDataExtractorCn(data)
+        [yearCatMetrics, seasonCatMetrics] = calculator.transform_data()
+        f_metrics = FundamentalMetrics(
+            ticker=ticker,
+            companyName=ticker,
+            metrics_cat_year = yearCatMetrics,
+            metrics_cat_season= seasonCatMetrics
+        )
+        logger.info('ym sm', yearCatMetrics, seasonCatMetrics)
+        return f_metrics
+
 
         # extractor = MetricsDataExtractor()
 

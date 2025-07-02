@@ -8,11 +8,11 @@
 - make a duckdb to trace the file existant of csv
 ## 03/07/2025
 - try to use mouse to draw a line
-## 02/07/2025
-- make csv client and returned the data
 - show the data on frontend
+## 02/07/2025
+- make csv client and returned the data - done
 ## 01/07/2025
-- make csv client 
+- make csv client -done
 ## 27/06/2025
 - make a api call to yahoo and store in json local file to moke frontend data - done
 - show the mock data and improve the charts's funcionalities - done

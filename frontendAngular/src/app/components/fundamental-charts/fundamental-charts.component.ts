@@ -19,12 +19,13 @@ export class FundamentalChartsComponent {
   fundamentalSerivice = inject(FundamentalService);
   isLoading = computed(() => this.fundamentalSerivice.isLoading());
   metricsValue = computed(() => this.fundamentalSerivice.fundamentalData());
-  metricsCategory = computed(() => this.metricsValue()?.metrics_cat || { year: [] });
+  metricsCategory = computed(() => this.metricsValue()?.metrics_cat || { time: [] });
   metricsCategoryObjEntry = computed(
     () => Object.entries(this.metricsCategory()) as [string, number[]][]
   );
-  years = computed(() => this.metricsCategory()?.year)
+  years = computed(() => this.metricsCategory()?.time)
   ticker = computed(() => this.fundamentalSerivice.tickerInput() || 'Default');
+  chinese = computed(() => this.fundamentalSerivice.chinisestest())
 
   constructor() {
     console.log('metr', this.metricsValue());
@@ -32,6 +33,7 @@ export class FundamentalChartsComponent {
       console.log('Metrics data:', this.metricsValue());
       console.log('Metrics category:', this.metricsCategory());
       console.log('Entries:', this.metricsCategoryObjEntry());
+      console.log("chiese", this.chinese())
     });
   }
 }

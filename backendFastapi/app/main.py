@@ -63,7 +63,7 @@ def read_fundamental_ratio_cn(ticker: str):
             raise HTTPException(
                 status_code=400, detail="Ticker symbol is required and cannot be empty"
             )
-        fa.excel_result(ticker)
+        return fa.excel_result(ticker)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

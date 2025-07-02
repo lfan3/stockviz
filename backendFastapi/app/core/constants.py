@@ -21,12 +21,36 @@ ROW_ALIASES = {
 }
 
 ROW_ALIASES_CN = {
-    "净利润": 'net_income',
-    "每股经营现金流":"operatingCashFlowPerShare",
+    "基本每股收益(元)":"eps",
+    "每股经营现金流(元)":"operatingCashFlowPerShare",
     "销售毛利率":'grossProfit',
     "净资产收益率":"roe",
     "流动比率":'currentRatio',
-    "资产负债率":'liabilitiesAssetRatio'
+    "资产负债率":'liabilitiesAssetRatio',
+
+    "科目\时间":"subject/time",
+    # Profitability Metrics
+    "净利润同比增长率":"Year-over-Year Net Profit Growth Rate",
+    "扣非净利润(元)": "Non-GAAP Net Profit",
+    "扣非净利润同比增长率":"YoY Non-GAAP Net Profit Growth Rate",
+    "营业总收入(元)":"Total Operating Revenue",
+    "营业总收入同比增长率":"YoY Operating Revenue Growth Rate",
+    "净利润(元)": 'net_income',
+    "销售净利率":"Net Profit Margin",
+    # Capital Structure Metrics
+    "每股净资产(元)": "Net Assets Per Share",
+    "每股资本公积金(元)": "Capital Reserve Per Share",
+    "每股未分配利润(元)": " Retained Earnings Per Share",
+    "净资产收益率-摊薄": "Diluted Return on Equity",
+    "产权比率": "Equity Ratio",
+    # Operating Efficiency Metrics
+    "营业周期(天)": "Operating Cycle",
+    "存货周转率(次)": "Inventory Turnover Ratio",
+    "存货周转天数(天)": "Days Sales of Inventory",
+    "应收账款周转天数(天)": "Days Sales Outstanding",
+    # Liquidity Metrics
+    "速动比率": "Quick Ratio",
+    "保守速动比率":"Conservative Quick Ratio"
 }
 
 CAC40 = [

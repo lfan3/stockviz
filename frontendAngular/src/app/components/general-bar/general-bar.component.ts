@@ -70,7 +70,7 @@ export class GeneralBarComponent {
       series: [
         {
           name: this.financialCategory(),
-          data: this.seriesData().map(num => parseFloat(num.toFixed(2))),
+          data: this.seriesData().map(num => isNaN(num) ? num : parseFloat(num.toFixed(2))),
         },
       ],
       chart: this.chart(),

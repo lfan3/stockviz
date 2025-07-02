@@ -26,6 +26,7 @@ export class FundamentalService extends CoreService {
   public fundamentalData = this._fundamentalData.asReadonly();
   serviceName = 'fundamental';
   public tickerInput = this._ticker.asReadonly()
+  public chinisestest = signal<any>(null)
 
 
   getFundamentalData(ticker: string): Observable<FundamentalMetrics> {
@@ -49,9 +50,31 @@ export class FundamentalService extends CoreService {
 
         // Different handling based on error type
         return throwError(() => error);
-
       })
+    );
+  }
 
+  public getFundamentalDataCn(ticker: string) {
+    return this.apiCall(
+      this.http
+        .get(
+          `${this.apiUrl}/${this.serviceName}/chinese/${ticker}`
+        )
+        .pipe(
+          tap((result) => {
+            console.log('result', result);
+            this._ticker.set(ticker)
+            this.chinisestest.set(result)
+          })
+        )
+    ).pipe(
+      catchError((error: HttpErrorResponse) => {
+        this._ticker.set('');
+        this.notificationService.showError(this.getErrorMessage(error, ticker))
+
+        // Different handling based on error type
+        return throwError(() => error);
+      })
     );
   }
 

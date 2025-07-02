@@ -31,40 +31,46 @@ class MetricsCategory(BaseModel):
         ...,
         description="list of Operating cash flow per share values (Operating cash flow/Outstanding shares)",
     )
-    debtAssetRatio: Optional[list[float]] = Field(
-        ...,
-        description="list of Debt-to-Asset ratios (Total debt/Total assets) as decimals",
-    )
+    # debtAssetRatio: Optional[list[float]] = Field(
+    #     ...,
+    #     description="list of Debt-to-Asset ratios (Total debt/Total assets) as decimals",
+    # )
+    debtAssetRatio:Optional[list[float]]  = None
     currentRatio: list[float] = Field(
         ..., description="list of Current ratios (Current assets/Current liabilities)"
     )
-    quickRatio: Optional[list[float]] = Field(
-        ...,
-        description="list of Quick ratios ((Current assets - Inventory)/Current liabilities)",
-    )
-    grossProfit: Optional[list[float]] = Field(
-        ...,
-        description="list of gross profit",
-    )
-
+    quickRatio: Optional[list[float]] = None
+    grossProfit: Optional[list[float]] = None
+    # grossProfit: Optional[list[float]] = Field(
+    #     ...,
+    #     description="list of gross profit",
+    # )
+    eps: Optional[list[float]] = None
     liabilitiesAssetRatio: list[float] = Field(
         ...,
         description="list of Liabilities-to-Asset ratios (Total liabilities/Total assets) as decimals",
     )
-    year: list[int] = Field(
+    time: list[int | str] = Field(
         ..., description="list of fiscal years corresponding to the metric values"
     )
+    timeType: str = Field(
+        ..., description="type of time, can be year or season"
+    )
+
 
 
 class FundamentalMetrics(BaseModel):
     ticker: str = Field(..., description="Stock ticker symbol")
     companyName: str = Field(..., description="Name of the company")
-    metrics: list[YearMetrics] = Field(
-        ..., description="list of financial metrics for each year"
-    )
-    metrics_cat: MetricsCategory = Field(
-        ..., description="financial metrics for each category"
-    )
+    metrics: Optional[list[YearMetrics]] = None
+    metrics_cat_year: Optional[MetricsCategory] = None
+    # metrics_cat_year: Optional[MetricsCategory] = Field(
+    #     ..., description="financial metrics for each category of each year"
+    # )
+    metrics_cat_season:Optional[MetricsCategory] = None
+    # metrics_cat_season:  Optional[MetricsCategory] = Field(
+    #     ..., description="financial metrics for each category of each season"
+    # )
 
     # Adds example data to the OpenAPI/Swagger documentation (useful for FastAPI).
     class Config:
@@ -90,7 +96,8 @@ class FundamentalMetrics(BaseModel):
                     "quickRatio": [1.2, 1.3, 1.4],
                     "operatingCashFlowPerShare": [3.50, 3.75, 4.20],
                     "liabilitiesAssetRatio": [0.55, 0.52, 0.50],
-                    "year": [2020, 2021, 2022],
+                    "time": [2020, 2021, 2022],
+                    "timeType": 'year'
                 },
             }
         }

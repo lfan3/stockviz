@@ -20,7 +20,12 @@ export class StickerInputComponent {
 
 
   onSubmitFundamental() {
-    this.service.getFundamentalData(this.ticketValue()).subscribe();
+    const ticker = this.ticketValue()
+    if (/[a-zA-Z]/.test(ticker)) {
+      this.service.getFundamentalData(this.ticketValue()).subscribe();
+    } else {
+      this.service.getFundamentalDataCn(ticker).subscribe()
+    }
   }
 
   onTickerValueChanged(value: string) {

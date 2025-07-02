@@ -51,7 +51,8 @@ export interface YearMetrics {
 }
 
 export interface MetricsCategory {
-  year: number[];
+  time: number[];
+  timeType: string;
   roe: number[];
   debtAssetRatio: number[];
   currentRatio: number[];
