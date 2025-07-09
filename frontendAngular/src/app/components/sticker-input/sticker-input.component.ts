@@ -1,11 +1,11 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { InputComponent } from '../../core/components/input/input.component';
 import { PrimaryButtonComponent } from '../../core/components/primary-button/primary-button.component';
 import {
   YearMetrics,
   FundamentalMetrics,
 } from '../../models/fundamental.model';
-import { FundamentalService } from '../../services/fundamentalService/fundamental.service';
+import { FundamentalService } from '../../services/fundamentalService/fundamental.service'
 
 @Component({
   selector: 'app-sticker-input',
@@ -15,21 +15,19 @@ import { FundamentalService } from '../../services/fundamentalService/fundamenta
   styles: ``,
 })
 export class StickerInputComponent {
-  protected service = inject(FundamentalService);
-  ticketValue = signal<string>('GNFT.PA');
-
+  protected fundamentalSerivice = inject(FundamentalService);
+  ticketValue = computed(() => this.fundamentalSerivice.tickerInput())
 
   onSubmitFundamental() {
     const ticker = this.ticketValue()
     if (/[a-zA-Z]/.test(ticker)) {
-      this.service.getFundamentalData(this.ticketValue()).subscribe();
+      this.fundamentalSerivice.getFundamentalData(this.ticketValue()).subscribe();
     } else {
-      this.service.getFundamentalDataCn(ticker).subscribe()
+      this.fundamentalSerivice.getFundamentalDataCn(ticker).subscribe()
     }
   }
 
   onTickerValueChanged(value: string) {
-    // this.service.updateTickerInput(value);
-    this.ticketValue.set(value)
+    this.fundamentalSerivice.updateTicker(value);
   }
 }

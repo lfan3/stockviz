@@ -34,22 +34,22 @@ class MetricsDataExtractorCn:
             time=years,
             timeType='year',
             roe=roe_y,
-            currentRatio=currentRatio_y,
-            operatingCashFlowPerShare=operatingCashFlowPerShare_y,
-            liabilitiesAssetRatio=liabilitiesAssetRatio_y,
             eps=eps_y,
-            grossProfit=grossProfit_y
+            grossProfit=grossProfit_y,
+            operatingCashFlowPerShare=operatingCashFlowPerShare_y,
+            currentRatio=currentRatio_y,
+            liabilitiesAssetRatio=liabilitiesAssetRatio_y,
         )
 
         seasonMetrics = MetricsCategory(
             time=season_date,
             timeType= 'season',
             roe=roe,
-            currentRatio=currentRatio,
-            operatingCashFlowPerShare=operatingCashFlowPerShare,
-            liabilitiesAssetRatio=liabilitiesAssetRatio,
             eps=eps,
-            grossProfit=grossProfit
+            grossProfit=grossProfit,
+            operatingCashFlowPerShare=operatingCashFlowPerShare,
+            currentRatio=currentRatio,
+            liabilitiesAssetRatio=liabilitiesAssetRatio,
         )
 
         return [yearCatMetrics, seasonMetrics]

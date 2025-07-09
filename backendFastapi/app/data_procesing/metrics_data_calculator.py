@@ -186,3 +186,4 @@ class MetricsDataExtractor:
             operatingCashFlowPerShare=operatingCashFlowPerShare,
             liabilitiesAssetRatio=liabilitiesAssetRatio,
         )
+  

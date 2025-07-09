@@ -1,22 +1,30 @@
-<div>
+<div class="border p-4 flex">
   <app-sticker-input
     placeholder="stock ticker..."
     prefixIcon="edit"
     suffixIcon="send"
     hint="Press Enter to send"
   ></app-sticker-input>
+</div>
+  <div [class.hidden]="!isChineseMarket()">
+  <mat-radio-group [value]="isYear() ? 'year' : 'season'">
+    <mat-radio-button value="year" (change)="onPeriodChange('year')">Year</mat-radio-button>
+    <mat-radio-button value="season" (change)="onPeriodChange('season')">Season</mat-radio-button>
+  </mat-radio-group>
+  </div>
   <div class="flex w-full flex-wrap justify-around gap-8 my-6 px-6">
+ 
   @if (isLoading()) {
     <p>Loading</p>
   } 
   @else {
    @if( metricsCategoryObjEntry().length) { 
     @for (category of metricsCategoryObjEntry(); track category[0]) { 
-      @if(ticker() && category[0] !="year"){
+      @if(ticker() && category[1] && category[0]){
         <app-general-bar
           [ticker]="ticker()"
           [financialCategory]="category[0]"
-          [xCat]="years()"
+          [xCat]="time()"
           [seriesData]="category[1]"
         >
         </app-general-bar>
@@ -26,17 +34,7 @@
     <!-- <app-general-bar ></app-general-bar> -->
   }
   }
-  </div>
-  @if(chinese()?.length > 2){
-  <app-general-bar
-    [ticker]="ticker()"
-    [financialCategory]="'test'"
-    [xCat]="chinese()[0]"
-    [seriesData]="chinese()[2]"
-  >
 
-  </app-general-bar>
-  }
 
   <!-- <app-example-char></app-example-char> -->
 </div>

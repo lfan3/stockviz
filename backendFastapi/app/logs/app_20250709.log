@@ -1,0 +1,651 @@
+2025-07-09 17:13:31 - uvicorn.error - INFO - Will watch for changes in these directories: ['/Users/llf/project/stockViz/backendFastapi/app']
+2025-07-09 17:13:31 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-07-09 17:13:31 - uvicorn.error - INFO - Started reloader process [72990] using WatchFiles
+2025-07-09 17:13:32 - uvicorn.error - INFO - Started server process [73000]
+2025-07-09 17:13:32 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:13:32 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:13:41 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/main.py", line 58, in read_fundamental_ratio_cn
+    csv_status_table_service =  CSVImportStatusDatabaseService()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py", line 14, in __init__
+    self._init_db()
+  File "/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py", line 17, in _init_db
+    self.dbManager.execute(sql_create_table_cn_com_imp_status)
+    ^^^^^^^^^^^^^^
+AttributeError: 'CSVImportStatusDatabaseService' object has no attribute 'dbManager'. Did you mean: 'db_manager'?
+2025-07-09 17:15:29 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:15:29 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:15:29 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:15:29 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:15:29 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:15:29 - uvicorn.error - INFO - Finished server process [73000]
+2025-07-09 17:15:30 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:15:30 - uvicorn.error - INFO - Started server process [74729]
+2025-07-09 17:15:30 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5060886928'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5060886928')}
+2025-07-09 17:15:30 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:15:30 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:15:39 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/main.py", line 58, in read_fundamental_ratio_cn
+    csv_status_table_service =  CSVImportStatusDatabaseService()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py", line 14, in __init__
+    self._init_db()
+  File "/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py", line 17, in _init_db
+    self.dbManager.execute(sql_create_table_cn_com_imp_status)
+    ^^^^^^^^^^^^^^
+AttributeError: 'CSVImportStatusDatabaseService' object has no attribute 'dbManager'. Did you mean: 'db_manager'?
+2025-07-09 17:16:00 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:16:00 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:16:00 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:16:00 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:16:00 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:16:00 - uvicorn.error - INFO - Finished server process [74729]
+2025-07-09 17:16:00 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:16:01 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5447811472'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5447811472')}
+2025-07-09 17:16:01 - uvicorn.error - INFO - Started server process [75181]
+2025-07-09 17:16:01 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:16:01 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:16:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:16:13 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:16:13 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:16:13 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:16:13 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:16:13 - uvicorn.error - INFO - Finished server process [75181]
+2025-07-09 17:16:14 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:16:15 - uvicorn.error - INFO - Started server process [75365]
+2025-07-09 17:16:15 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:16:15 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:16:15 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4968612240'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4968612240')}
+2025-07-09 17:16:46 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:16:46 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:16:46 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:16:46 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:16:46 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:16:46 - uvicorn.error - INFO - Finished server process [75365]
+2025-07-09 17:16:47 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:16:47 - uvicorn.error - INFO - Started server process [75822]
+2025-07-09 17:16:47 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:16:47 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:16:47 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5774983568'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5774983568')}
+2025-07-09 17:18:40 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:18:40 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:18:40 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:18:41 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:18:41 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:18:41 - uvicorn.error - INFO - Finished server process [75822]
+2025-07-09 17:18:41 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:18:42 - uvicorn.error - INFO - Started server process [77468]
+2025-07-09 17:18:42 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:18:42 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:18:42 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5110170000'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5110170000'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc')}
+2025-07-09 17:18:45 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:18:45 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:18:45 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:18:45 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:18:45 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:18:45 - uvicorn.error - INFO - Finished server process [77468]
+2025-07-09 17:18:45 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:18:46 - uvicorn.error - INFO - Started server process [77498]
+2025-07-09 17:18:46 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:18:46 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:18:46 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4745265552'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4745265552')}
+2025-07-09 17:18:47 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:18:47 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:18:47 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:18:47 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:18:47 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:18:47 - uvicorn.error - INFO - Finished server process [77498]
+2025-07-09 17:18:47 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:18:48 - uvicorn.error - INFO - Started server process [77511]
+2025-07-09 17:18:48 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:18:48 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:18:48 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4887871888'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4887871888')}
+2025-07-09 17:19:11 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:19:11 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:19:11 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:19:11 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:19:11 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:19:11 - uvicorn.error - INFO - Finished server process [77511]
+2025-07-09 17:19:12 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:19:12 - uvicorn.error - INFO - Started server process [77839]
+2025-07-09 17:19:12 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:19:12 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:19:12 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4744216976'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4744216976')}
+2025-07-09 17:19:30 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:19:30 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:19:30 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:19:30 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:19:30 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:19:30 - uvicorn.error - INFO - Finished server process [77839]
+2025-07-09 17:19:30 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:19:31 - uvicorn.error - INFO - Started server process [78135]
+2025-07-09 17:19:31 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:19:31 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:19:31 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5907120528'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5907120528')}
+2025-07-09 17:21:01 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/database/duckdb_manager.py')}
+2025-07-09 17:21:02 - uvicorn.error - WARNING - WatchFiles detected changes in 'database/duckdb_manager.py'. Reloading...
+2025-07-09 17:21:02 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:21:02 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:21:02 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:21:02 - uvicorn.error - INFO - Finished server process [78135]
+2025-07-09 17:21:02 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:21:03 - uvicorn.error - INFO - Started server process [79464]
+2025-07-09 17:21:03 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:21:03 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:21:03 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc.5483052272'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc.5483052272'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc')}
+2025-07-09 17:23:10 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:23:10 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:23:10 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:23:11 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:23:11 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:23:11 - uvicorn.error - INFO - Finished server process [79464]
+2025-07-09 17:23:11 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:23:12 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4821811600'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4821811600')}
+2025-07-09 17:23:12 - uvicorn.error - INFO - Started server process [81264]
+2025-07-09 17:23:12 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:23:12 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:26:47 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:26:47 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:26:47 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:26:47 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:26:47 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:26:47 - uvicorn.error - INFO - Finished server process [81264]
+2025-07-09 17:26:48 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:26:48 - uvicorn.error - INFO - Started server process [84242]
+2025-07-09 17:26:48 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:26:48 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:26:48 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4808196496'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4808196496')}
+2025-07-09 17:28:04 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/database/duckdb_manager.py')}
+2025-07-09 17:28:04 - uvicorn.error - WARNING - WatchFiles detected changes in 'database/duckdb_manager.py'. Reloading...
+2025-07-09 17:28:04 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:28:04 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:28:04 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:28:04 - uvicorn.error - INFO - Finished server process [84242]
+2025-07-09 17:28:04 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:28:05 - uvicorn.error - INFO - Started server process [85314]
+2025-07-09 17:28:05 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:28:05 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:28:05 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc.4677745904'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc.4677745904'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc')}
+2025-07-09 17:28:38 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:28:38 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:28:38 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:28:38 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:28:38 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:28:38 - uvicorn.error - INFO - Finished server process [85314]
+2025-07-09 17:28:39 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:28:40 - uvicorn.error - INFO - Started server process [85891]
+2025-07-09 17:28:40 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:28:40 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:28:40 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4691788176'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4691788176')}
+2025-07-09 17:36:48 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:36:48 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:36:48 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:36:49 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:36:49 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:36:49 - uvicorn.error - INFO - Finished server process [85891]
+2025-07-09 17:36:49 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:36:50 - uvicorn.error - INFO - Started server process [92773]
+2025-07-09 17:36:50 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:36:50 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:36:50 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4929814928'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4929814928'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc')}
+2025-07-09 17:39:14 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/csv_client.py')}
+2025-07-09 17:39:14 - uvicorn.error - WARNING - WatchFiles detected changes in 'data_aquisition/csv_client.py'. Reloading...
+2025-07-09 17:39:14 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:39:14 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:39:14 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:39:14 - uvicorn.error - INFO - Finished server process [92773]
+2025-07-09 17:39:14 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:39:15 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/csv_client.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/csv_client.cpython-312.pyc.4910526320'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/csv_client.cpython-312.pyc.4910526320')}
+2025-07-09 17:39:15 - uvicorn.error - INFO - Started server process [94734]
+2025-07-09 17:39:15 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:39:15 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:39:25 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 17:39:25 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 17:39:25 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:39:25 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:39:25 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:39:25 - uvicorn.error - INFO - Finished server process [94734]
+2025-07-09 17:39:26 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:39:26 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4392134448'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4392134448'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc')}
+2025-07-09 17:39:26 - uvicorn.error - INFO - Started server process [94914]
+2025-07-09 17:39:26 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:39:26 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:40:30 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/csv_client.py')}
+2025-07-09 17:40:30 - uvicorn.error - WARNING - WatchFiles detected changes in 'data_aquisition/csv_client.py'. Reloading...
+2025-07-09 17:40:30 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:40:30 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:40:30 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:40:30 - uvicorn.error - INFO - Finished server process [94914]
+2025-07-09 17:40:31 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:40:31 - uvicorn.error - INFO - Started server process [95931]
+2025-07-09 17:40:31 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:40:31 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:40:31 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/csv_client.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/csv_client.cpython-312.pyc.5335199600'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/csv_client.cpython-312.pyc.5335199600')}
+2025-07-09 17:41:28 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/yahoo_client.py')}
+2025-07-09 17:41:28 - uvicorn.error - WARNING - WatchFiles detected changes in 'data_aquisition/yahoo_client.py'. Reloading...
+2025-07-09 17:41:28 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:41:28 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:41:28 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:41:28 - uvicorn.error - INFO - Finished server process [95931]
+2025-07-09 17:41:28 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:41:29 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/yahoo_client.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/yahoo_client.cpython-312.pyc.4728465728'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_aquisition/__pycache__/yahoo_client.cpython-312.pyc.4728465728')}
+2025-07-09 17:41:29 - uvicorn.error - INFO - Started server process [96720]
+2025-07-09 17:41:29 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:41:29 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:41:55 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:41:55 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:41:55 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:41:55 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:41:55 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:41:55 - uvicorn.error - INFO - Finished server process [96720]
+2025-07-09 17:41:56 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:41:56 - uvicorn.error - INFO - Started server process [97155]
+2025-07-09 17:41:56 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:41:56 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:41:56 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4826038848'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4826038848')}
+2025-07-09 17:43:44 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:43:44 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:43:44 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:43:44 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:43:44 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:43:44 - uvicorn.error - INFO - Finished server process [97155]
+2025-07-09 17:43:44 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:43:45 - uvicorn.error - INFO - Started server process [98678]
+2025-07-09 17:43:45 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:43:45 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:43:45 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5080859200'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5080859200')}
+2025-07-09 17:44:07 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 17:44:07 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 17:44:07 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:44:07 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:44:07 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:44:07 - uvicorn.error - INFO - Finished server process [98678]
+2025-07-09 17:44:08 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:44:08 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4359579440'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4359579440')}
+2025-07-09 17:44:08 - uvicorn.error - INFO - Started server process [98990]
+2025-07-09 17:44:08 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:44:08 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:46:36 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:46:36 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:46:36 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:46:36 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:46:36 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:46:36 - uvicorn.error - INFO - Finished server process [98990]
+2025-07-09 17:46:36 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:46:37 - uvicorn.error - INFO - Started server process [1412]
+2025-07-09 17:46:37 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:46:37 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:46:37 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4811571600'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4811571600')}
+2025-07-09 17:51:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/database/duckdb_manager.py')}
+2025-07-09 17:51:13 - uvicorn.error - WARNING - WatchFiles detected changes in 'database/duckdb_manager.py'. Reloading...
+2025-07-09 17:51:14 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:51:14 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:51:14 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:51:14 - uvicorn.error - INFO - Finished server process [1412]
+2025-07-09 17:51:14 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:51:15 - uvicorn.error - INFO - Started server process [5295]
+2025-07-09 17:51:15 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:51:15 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:51:15 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc.4828740848'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc.4828740848'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/database/__pycache__/duckdb_manager.cpython-312.pyc')}
+2025-07-09 17:51:26 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:51:26 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:51:26 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:51:27 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:51:27 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:51:27 - uvicorn.error - INFO - Finished server process [5295]
+2025-07-09 17:51:27 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:51:28 - uvicorn.error - INFO - Started server process [5462]
+2025-07-09 17:51:28 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:51:28 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:51:28 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5126979984'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5126979984')}
+2025-07-09 17:51:49 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:51:49 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:51:50 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:51:50 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:51:50 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:51:50 - uvicorn.error - INFO - Finished server process [5462]
+2025-07-09 17:51:50 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:51:51 - uvicorn.error - INFO - Started server process [5786]
+2025-07-09 17:51:51 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:51:51 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:51:51 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4871143824'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.4871143824')}
+2025-07-09 17:58:14 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/CSVImportStatusDatabaseService.py')}
+2025-07-09 17:58:14 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/CSVImportStatusDatabaseService.py'. Reloading...
+2025-07-09 17:58:14 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:58:14 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:58:14 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:58:14 - uvicorn.error - INFO - Finished server process [5786]
+2025-07-09 17:58:15 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:58:15 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5280088464'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/CSVImportStatusDatabaseService.cpython-312.pyc.5280088464')}
+2025-07-09 17:58:15 - uvicorn.error - INFO - Started server process [11173]
+2025-07-09 17:58:15 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:58:15 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:58:36 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 17:58:36 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 17:58:36 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:58:36 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:58:36 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:58:36 - uvicorn.error - INFO - Finished server process [11173]
+2025-07-09 17:58:37 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:58:37 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4358809392'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4358809392')}
+2025-07-09 17:58:37 - uvicorn.error - INFO - Started server process [11596]
+2025-07-09 17:58:37 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:58:37 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:58:41 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/data/data_pool/603989_main_report.csv
+2025-07-09 17:59:03 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 17:59:03 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 17:59:03 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:59:03 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:59:03 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:59:03 - uvicorn.error - INFO - Finished server process [11596]
+2025-07-09 17:59:03 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:59:04 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4840548144'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4840548144')}
+2025-07-09 17:59:04 - uvicorn.error - INFO - Started server process [11933]
+2025-07-09 17:59:04 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:59:04 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:59:05 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 17:59:05 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 17:59:05 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:59:06 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:59:06 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:59:06 - uvicorn.error - INFO - Finished server process [11933]
+2025-07-09 17:59:06 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:59:06 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4359595824'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4359595824')}
+2025-07-09 17:59:07 - uvicorn.error - INFO - Started server process [11955]
+2025-07-09 17:59:07 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:59:07 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 17:59:15 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 17:59:15 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 17:59:15 - uvicorn.error - INFO - Shutting down
+2025-07-09 17:59:15 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 17:59:15 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 17:59:15 - uvicorn.error - INFO - Finished server process [11955]
+2025-07-09 17:59:16 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 17:59:16 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4417316656'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4417316656'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc')}
+2025-07-09 17:59:16 - uvicorn.error - INFO - Started server process [12119]
+2025-07-09 17:59:16 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 17:59:16 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:04:08 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:04:08 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:04:08 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:04:08 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:04:08 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:04:08 - uvicorn.error - INFO - Finished server process [12119]
+2025-07-09 18:04:08 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:04:09 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4412614448'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4412614448')}
+2025-07-09 18:04:09 - uvicorn.error - INFO - Started server process [16288]
+2025-07-09 18:04:09 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:04:09 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:09:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:09:13 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:09:13 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:09:13 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:09:13 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:09:13 - uvicorn.error - INFO - Finished server process [16288]
+2025-07-09 18:09:14 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:09:14 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4382320432'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4382320432'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc')}
+2025-07-09 18:09:14 - uvicorn.error - INFO - Started server process [20529]
+2025-07-09 18:09:14 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:09:14 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:16:16 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/data/data_pool/603989_main_report.csv
+2025-07-09 18:20:09 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/FinancialAnalysisFacade.py')}
+2025-07-09 18:20:09 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/FinancialAnalysisFacade.py'. Reloading...
+2025-07-09 18:20:09 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:20:09 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:20:10 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:20:10 - uvicorn.error - INFO - Finished server process [20529]
+2025-07-09 18:20:10 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:20:10 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/FinancialAnalysisFacade.cpython-312.pyc.4402551728'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/FinancialAnalysisFacade.cpython-312.pyc.4402551728'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/FinancialAnalysisFacade.cpython-312.pyc')}
+2025-07-09 18:20:11 - uvicorn.error - INFO - Started server process [29970]
+2025-07-09 18:20:11 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:20:11 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:25:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:25:13 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:25:13 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:25:13 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:25:13 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:25:13 - uvicorn.error - INFO - Finished server process [29970]
+2025-07-09 18:25:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:25:14 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4399195952'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4399195952')}
+2025-07-09 18:25:14 - uvicorn.error - INFO - Started server process [34220]
+2025-07-09 18:25:14 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:25:14 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:26:38 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:26:38 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:26:38 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:26:38 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:26:38 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:26:38 - uvicorn.error - INFO - Finished server process [34220]
+2025-07-09 18:26:38 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:26:38 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4419151664'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4419151664')}
+2025-07-09 18:26:39 - uvicorn.error - INFO - Started server process [35433]
+2025-07-09 18:26:39 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:26:39 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:26:43 - root - INFO - begin the FinancialAnalysisFacade.full_analysis
+2025-07-09 18:26:43 - root - INFO - get_balance_sheet
+2025-07-09 18:26:43 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-07-09 18:26:43 - yfinance - DEBUG -  Entering get()
+2025-07-09 18:26:43 - yfinance - DEBUG -   Entering _make_request()
+2025-07-09 18:26:43 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/DEFAULT?symbol=DEFAULT&type=annualTreasurySharesNumber,annualPreferredSharesNumber,annualOrdinarySharesNumber,annualSh...
+2025-07-09 18:26:43 - yfinance - DEBUG - params=None
+2025-07-09 18:26:43 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-07-09 18:26:43 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-07-09 18:26:43 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-07-09 18:26:43 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-07-09 18:26:43 - yfinance - DEBUG -       Entering _load_cookie_curlCffi()
+2025-07-09 18:26:43 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-07-09 18:26:43 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-07-09 18:26:43 - yfinance - DEBUG -       Exiting _load_cookie_curlCffi()
+2025-07-09 18:26:43 - yfinance - DEBUG - reusing persistent cookie
+2025-07-09 18:26:43 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-07-09 18:26:43 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-07-09 18:26:43 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-07-09 18:26:43 - yfinance - DEBUG - reusing cookie
+2025-07-09 18:26:43 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG - crumb = 'SxSQVsAqoTG'
+2025-07-09 18:26:44 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-07-09 18:26:44 - yfinance - DEBUG - response code=200
+2025-07-09 18:26:44 - yfinance - DEBUG -   Exiting _make_request()
+2025-07-09 18:26:44 - yfinance - DEBUG -  Exiting get()
+2025-07-09 18:26:44 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-07-09 18:26:44 - root - INFO - get_cash_flow
+2025-07-09 18:26:44 - yfinance - DEBUG - Entering _fetch_time_series()
+2025-07-09 18:26:44 - yfinance - DEBUG -  Entering get()
+2025-07-09 18:26:44 - yfinance - DEBUG -   Entering _make_request()
+2025-07-09 18:26:44 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/DEFAULT?symbol=DEFAULT&type=annualForeignSales,annualDomesticSales,annualAdjustedGeographySegmentData,annualFreeCashFl...
+2025-07-09 18:26:44 - yfinance - DEBUG - params=None
+2025-07-09 18:26:44 - yfinance - DEBUG -    Entering _get_cookie_and_crumb()
+2025-07-09 18:26:44 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-07-09 18:26:44 - yfinance - DEBUG -     Entering _get_cookie_and_crumb_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG -      Entering _get_cookie_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG - reusing cookie
+2025-07-09 18:26:44 - yfinance - DEBUG -      Exiting _get_cookie_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG -      Entering _get_crumb_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG - reusing crumb
+2025-07-09 18:26:44 - yfinance - DEBUG -      Exiting _get_crumb_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb_basic()
+2025-07-09 18:26:44 - yfinance - DEBUG -    Exiting _get_cookie_and_crumb()
+2025-07-09 18:26:44 - yfinance - DEBUG - response code=200
+2025-07-09 18:26:44 - yfinance - DEBUG -   Exiting _make_request()
+2025-07-09 18:26:44 - yfinance - DEBUG -  Exiting get()
+2025-07-09 18:26:44 - yfinance - DEBUG - Exiting _fetch_time_series()
+2025-07-09 18:26:44 - root - ERROR - Error fetching data for Default: No balance_sheet data found for ticker: Default
+2025-07-09 18:26:44 - root - ERROR - full_analysis error: No balance_sheet data found for ticker: Default
+2025-07-09 18:29:15 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:29:15 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:29:15 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:29:15 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:29:15 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:29:15 - uvicorn.error - INFO - Finished server process [35433]
+2025-07-09 18:29:16 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:29:16 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4422985520'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4422985520'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc')}
+2025-07-09 18:29:16 - uvicorn.error - INFO - Started server process [37678]
+2025-07-09 18:29:16 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:29:16 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:31:32 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:31:32 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:31:32 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:31:32 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:31:32 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:31:32 - uvicorn.error - INFO - Finished server process [37678]
+2025-07-09 18:31:32 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:31:33 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4356220720'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4356220720')}
+2025-07-09 18:31:33 - uvicorn.error - INFO - Started server process [39636]
+2025-07-09 18:31:33 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:31:33 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:32:03 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:32:03 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:32:03 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:32:03 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:32:03 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:32:03 - uvicorn.error - INFO - Finished server process [39636]
+2025-07-09 18:32:03 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:32:04 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4379273008'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4379273008'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc')}
+2025-07-09 18:32:04 - uvicorn.error - INFO - Started server process [40093]
+2025-07-09 18:32:04 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:32:04 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:32:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:32:13 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:32:13 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:32:13 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:32:13 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:32:13 - uvicorn.error - INFO - Finished server process [40093]
+2025-07-09 18:32:13 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:32:13 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4359120688'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4359120688')}
+2025-07-09 18:32:14 - uvicorn.error - INFO - Started server process [40139]
+2025-07-09 18:32:14 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:32:14 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:33:16 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/main.py')}
+2025-07-09 18:33:16 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-07-09 18:33:16 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:33:16 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:33:16 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:33:16 - uvicorn.error - INFO - Finished server process [40139]
+2025-07-09 18:33:16 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250709.log')}
+2025-07-09 18:33:17 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4426442544'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc.4426442544'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/__pycache__/main.cpython-312.pyc')}
+2025-07-09 18:33:17 - uvicorn.error - INFO - Started server process [41130]
+2025-07-09 18:33:17 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-09 18:33:17 - uvicorn.error - INFO - Application startup complete.
+2025-07-09 18:39:22 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/data/data_pool/603989_main_report.csv
+2025-07-09 18:40:29 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/data/data_pool/603989_main_report.csv
+2025-07-09 18:41:31 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/data/data_pool/603989_main_report.csv
+2025-07-09 18:45:47 - uvicorn.error - INFO - Shutting down
+2025-07-09 18:45:47 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-09 18:45:47 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-09 18:45:47 - uvicorn.error - INFO - Finished server process [41130]
+2025-07-09 18:45:47 - uvicorn.error - INFO - Stopping reloader process [72990]

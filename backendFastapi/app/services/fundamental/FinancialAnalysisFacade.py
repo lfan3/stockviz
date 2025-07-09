@@ -35,12 +35,12 @@ class FinancialAnalysisFacade:
                 balance_sheet=balance_sheet_cleaned,
             )
             metrics = calculator.calculate_metrics_per_year()
-            metrics_cat = calculator.transformer_to_metrics_per_caterogy(metrics)
+            metrics_cat_year = calculator.transformer_to_metrics_per_caterogy(metrics)
             f_metrics = FundamentalMetrics(
                 ticker=ticker,
                 companyName=info.companyName,
                 metrics=metrics,
-                metrics_cat_year=metrics_cat,
+                metrics_cat_year=metrics_cat_year,
             )
             logger.info("f_metrics %s: ", f_metrics)
             return f_metrics
@@ -48,22 +48,22 @@ class FinancialAnalysisFacade:
             logger.error(f"full_analysis error: {str(err)}")
             return None
 
-    def excel_result(self,ticker):
-        xtlClient = CSVClient()
-        data = xtlClient.get_financial_data(ticker)
-        calculator = MetricsDataExtractorCn(data)
-        [yearCatMetrics, seasonCatMetrics] = calculator.transform_data()
-        f_metrics = FundamentalMetrics(
-            ticker=ticker,
-            companyName=ticker,
-            metrics_cat_year = yearCatMetrics,
-            metrics_cat_season= seasonCatMetrics
-        )
-        logger.info('ym sm', yearCatMetrics, seasonCatMetrics)
-        return f_metrics
-
-
-        # extractor = MetricsDataExtractor()
+    def csv_result(self,ticker):
+        try:
+            xtlClient = CSVClient()
+            data = xtlClient.get_financial_data(ticker)
+            calculator = MetricsDataExtractorCn(data)
+            [yearCatMetrics, seasonCatMetrics] = calculator.transform_data()
+            f_metrics = FundamentalMetrics(
+                ticker=ticker,
+                companyName=ticker,
+                metrics_cat_year = yearCatMetrics,
+                metrics_cat_season= seasonCatMetrics
+            )
+            return f_metrics
+        except Exception as err:
+            logger.error(f"csv_result error: {str(err)}")
+            return None
 
 
 

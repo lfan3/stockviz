@@ -6,8 +6,7 @@ from app.utils import get_logger
 
 
 logger = get_logger(__name__)
-data_pool_folder = Path(__file__).parent
-data_pool_folder = Path(__file__).parent.parent.joinpath('data_pool') 
+data_pool_folder = Path(__file__).parent.parent.parent.joinpath('data','data_pool') 
 print("folder", data_pool_folder)
 
 

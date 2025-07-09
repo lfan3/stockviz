@@ -54,11 +54,34 @@ export interface MetricsCategory {
   time: number[];
   timeType: string;
   roe: number[];
-  debtAssetRatio: number[];
+  debtAssetRatio?: number[];
   currentRatio: number[];
-  quickRatio: number[];
+  quickRatio?: number[];
   operatingCashFlowPerShare: number[];
   liabilitiesAssetRatio: number[];
+  grossProfit?: number[];
+  eps?: number[];
+}
+
+
+export interface FundamentalMetricsResponse {
+  /**
+   * Ticker
+   * @description Stock ticker symbol
+   */
+  ticker: string;
+  /**
+   * Companyname
+   * @description Name of the company
+   */
+  companyName: string;
+  /**
+   * Metrics
+   * @description List of financial metrics for each year
+   */
+  metrics?: YearMetrics[];
+  metrics_cat_year: MetricsCategory
+  metrics_cat_season: MetricsCategory
 }
 
 export interface FundamentalMetrics {
@@ -76,6 +99,6 @@ export interface FundamentalMetrics {
    * Metrics
    * @description List of financial metrics for each year
    */
-  metrics: YearMetrics[];
+  metrics?: YearMetrics[];
   metrics_cat: MetricsCategory;
 }

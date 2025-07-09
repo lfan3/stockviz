@@ -114,6 +114,10 @@ export class GeneralBarComponent {
         return 'Cash flow per share'
       case 'liabilitiesAssetRatio':
         return 'Liabilities to Assets'
+      case 'grossProfit':
+        return 'Gross Profit'
+      case 'eps':
+        return 'EPS'
       default:
         return 'ROE'
     }

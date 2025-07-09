@@ -1,0 +1,60 @@
+2025-07-04 17:14:34 - uvicorn.error - INFO - Will watch for changes in these directories: ['/Users/llf/project/stockViz/backendFastapi/app']
+2025-07-04 17:14:34 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-07-04 17:14:34 - uvicorn.error - INFO - Started reloader process [6981] using WatchFiles
+2025-07-04 17:14:35 - uvicorn.error - INFO - Started server process [7098]
+2025-07-04 17:14:35 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-04 17:14:35 - uvicorn.error - INFO - Application startup complete.
+2025-07-04 17:14:39 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 17:23:42 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/metrics_data_calculator.py')}
+2025-07-04 17:23:42 - uvicorn.error - WARNING - WatchFiles detected changes in 'data_procesing/metrics_data_calculator.py'. Reloading...
+2025-07-04 17:23:42 - uvicorn.error - INFO - Shutting down
+2025-07-04 17:23:42 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-04 17:23:42 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-04 17:23:42 - uvicorn.error - INFO - Finished server process [7098]
+2025-07-04 17:23:42 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250704.log')}
+2025-07-04 17:23:43 - uvicorn.error - INFO - Started server process [14850]
+2025-07-04 17:23:43 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-04 17:23:43 - uvicorn.error - INFO - Application startup complete.
+2025-07-04 17:23:43 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/__pycache__/metrics_data_calculator.cpython-312.pyc.4893036816'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/__pycache__/metrics_data_calculator.cpython-312.pyc.4893036816'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/__pycache__/metrics_data_calculator.cpython-312.pyc')}
+2025-07-04 17:23:52 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/FinancialAnalysisFacade.py')}
+2025-07-04 17:23:52 - uvicorn.error - WARNING - WatchFiles detected changes in 'services/fundamental/FinancialAnalysisFacade.py'. Reloading...
+2025-07-04 17:23:52 - uvicorn.error - INFO - Shutting down
+2025-07-04 17:23:52 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-04 17:23:52 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-04 17:23:52 - uvicorn.error - INFO - Finished server process [14850]
+2025-07-04 17:23:52 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250704.log')}
+2025-07-04 17:23:53 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/FinancialAnalysisFacade.cpython-312.pyc.4425359856'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/FinancialAnalysisFacade.cpython-312.pyc.4425359856'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/services/fundamental/__pycache__/FinancialAnalysisFacade.cpython-312.pyc')}
+2025-07-04 17:23:53 - uvicorn.error - INFO - Started server process [15021]
+2025-07-04 17:23:53 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-04 17:23:53 - uvicorn.error - INFO - Application startup complete.
+2025-07-04 17:26:19 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 17:40:59 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 17:42:54 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 17:52:08 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 17:57:14 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 18:25:11 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:14:18 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:16:14 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:19:03 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:22:39 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/metrics_data_calculator_cn.py')}
+2025-07-04 19:22:39 - uvicorn.error - WARNING - WatchFiles detected changes in 'data_procesing/metrics_data_calculator_cn.py'. Reloading...
+2025-07-04 19:22:39 - uvicorn.error - INFO - Shutting down
+2025-07-04 19:22:40 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-04 19:22:40 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-04 19:22:40 - uvicorn.error - INFO - Finished server process [15021]
+2025-07-04 19:22:40 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/logs/app_20250704.log')}
+2025-07-04 19:22:41 - uvicorn.error - INFO - Started server process [76001]
+2025-07-04 19:22:41 - uvicorn.error - INFO - Waiting for application startup.
+2025-07-04 19:22:41 - uvicorn.error - INFO - Application startup complete.
+2025-07-04 19:22:41 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/__pycache__/metrics_data_calculator_cn.cpython-312.pyc'), (<Change.deleted: 3>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/__pycache__/metrics_data_calculator_cn.cpython-312.pyc.5642770576'), (<Change.added: 1>, '/Users/llf/project/stockViz/backendFastapi/app/data_procesing/__pycache__/metrics_data_calculator_cn.cpython-312.pyc.5642770576')}
+2025-07-04 19:22:41 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:30:55 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:38:42 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:39:27 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-04 19:39:57 - root - INFO - xtl filepath: /Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv
+2025-07-05 21:53:47 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/Users/llf/project/stockViz/backendFastapi/app/data_pool/603989_main_report.csv')}
+2025-07-05 22:20:16 - uvicorn.error - INFO - Shutting down
+2025-07-05 22:20:16 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-07-05 22:20:16 - uvicorn.error - INFO - Application shutdown complete.
+2025-07-05 22:20:16 - uvicorn.error - INFO - Finished server process [76001]
+2025-07-05 22:20:16 - uvicorn.error - INFO - Stopping reloader process [6981]

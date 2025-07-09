@@ -1,14 +1,30 @@
+- add more indicator for cn stockes: to see the coelation with price and some other thing
+
+## 14/07/2025
+- calculate more intrigue value and PE/Growth ratio
+- editing feature
+## 13/07/2025
+- show the ratio according to its category on the frontend
+## 12/07/2025
+- create manually the montly average price for 603989
+- reorganise the fundamental ratio
+## 11/07/2025
+- show the last 10 visited company's ticker and name on the frontend
+## 10/07/2025
+- when i search a company, and i have the data, stock the com in the list
+- implement new service for company group
+## 09/07/2025
+- make http request when enter a chinese stock companiy's ticker,if i have no data yet, show on the front that i need to collect the csv to my back -done
+## 08/07/2025
+- create two tables for duckdb, one for track the imported csv list another for the future grouping usage
 ## 07/07/2025
-- test on cac40, create a list of cac40 and when click on it, turn to the analyse visual page
-## 06/07/2025
-- do some analyse to the calculation metric algo and try to solve some inconsistancy problem
+- install duckdb
 ## 05/07/2025
 - keep trace the last 10 recently visited company
+
 ## 04/07/2025
-- make a duckdb to trace the file existant of csv
-## 03/07/2025
-- try to use mouse to draw a line
-- show the data on frontend
+- add year/season choiser -done
+- show the data on frontend -done
 ## 02/07/2025
 - make csv client and returned the data - done
 ## 01/07/2025

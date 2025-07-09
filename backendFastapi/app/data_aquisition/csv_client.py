@@ -1,13 +1,13 @@
 from pathlib import Path
 import pandas as pd
-from app.models.fundamental_model import YearMetrics, FundamentalMetrics, CompanyInfo
 from app.core import ROW_ALIASES_CN
 
 from app.utils import get_logger
 
 
 logger = get_logger(__name__)
-data_aquisition_folder = Path(__file__).parent.parent.joinpath('data_pool')
+data_aquisition_folder = Path(__file__).parent.parent.parent.joinpath('data','data_pool')
+print("data_aqui", data_aquisition_folder)
 
 
 class CSVClient:

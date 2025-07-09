@@ -1,11 +1,9 @@
-from doctest import debug
-from typing import Union
-
 from fastapi import FastAPI, HTTPException
 
 # from services.fundamental.fundamental import Fundamental
-from app.services import FinancialAnalysisFacade, PriceService
+from app.services import FinancialAnalysisFacade, PriceService, CSVImportStatusDatabaseService
 from app.models import FundamentalMetrics
+from fastapi.responses import JSONResponse
 
 from app.utils.logger import setup_logging, get_logger
 
@@ -58,12 +56,23 @@ def read_fundamental_ratio(ticker: str) -> FundamentalMetrics:
 @app.get("/api/fundamental/chinese/{ticker}")
 def read_fundamental_ratio_cn(ticker: str):
     fa = FinancialAnalysisFacade()
+    csv_status_table_service =  CSVImportStatusDatabaseService()
     try:
         if not ticker or not ticker.strip():
             raise HTTPException(
                 status_code=400, detail="Ticker symbol is required and cannot be empty"
             )
-        return fa.excel_result(ticker)
+        existes = csv_status_table_service.check_csv_status(ticker)
+        print("exisit",existes)
+        if existes:
+            return fa.csv_result(ticker)
+        else:
+            return JSONResponse({
+                "status_code":405, 
+                "detail":"we have no this ticker's csv yet"
+            }
+                
+            )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
